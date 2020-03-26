@@ -48,7 +48,7 @@
 	bottom: 0;
 	left: 360px;
 	max-width: 100%;
-	z-index: 1;
+	z-index: 2;
 	height: auto;
 	background-image: url(../../images/mountain-two.svg);
 	background-size: 600px 600px;
@@ -63,8 +63,84 @@
 	bottom: 0;
 	left: 750px;
 	max-width: 100%;
+	z-index: 1;
 	height: auto;
 	background-image: url(../../images/mountain-three.svg);
 	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}
+
+.mountain-four {
+	content: "";
+  position: absolute;
+	top: 900px;
+	right: 0;
+	bottom: 0;
+	left: 550px;
+	max-width: 100%;
+	z-index: 0;
+	height: auto;
+	background-image: url(../../images/mountain-four.svg);
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}
+
+.mountain-fg-one {
+	content: "";
+  position: absolute;
+	top: 1050px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 100%;
+	z-index: 3;
+	height: auto;
+	background-image: url(../../images/mountain-fg-one.svg);
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}
+
+.mountain-fg-two {
+	content: "";
+  position: absolute;
+	top: 1100px;
+	right: 0;
+	bottom: 0;
+	left: 700px;
+	max-width: 100%;
+	z-index: 7;
+	height: auto;
+	background-image: url(../../images/mountain-fg-two.svg);
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}
+
+.trees-one {
+	content: "";
+  position: absolute;
+	top: 1200px;
+	right: 0;
+	bottom: 0;
+	left: 250px;
+	max-width: 100%;
+	z-index: 4;
+	height: auto;
+	background-image: url(../../images/trees-one.svg);
+	background-size: 500px 500px;
+	background-repeat: no-repeat;
+}
+
+.river {
+	content: "";
+  position: absolute;
+	top: 1350px;
+	right: 0;
+	bottom: 0;
+	left: 650px;
+	max-width: 100%;
+	z-index: 3;
+	height: auto;
+	background-image: url(../../images/river.svg);
+	background-size: 300px 300px;
 	background-repeat: no-repeat;
 }

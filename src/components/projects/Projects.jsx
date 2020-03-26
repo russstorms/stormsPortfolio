@@ -1,7 +1,9 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import '../../theme.css'
 import './Projects.css'
+import 'animate.css/animate.min.css'
 
 const Projects = () => {
   return (
@@ -60,10 +62,20 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <div className="sun"></div>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="sun"></div>
+      </ScrollAnimation>
       <div className="mountain-one"></div>
       <div className="mountain-two"></div>
       <div className="mountain-three"></div>
+      <div className="mountain-four"></div>
+      <div className="mountain-fg-one"></div>
+      <div className="mountain-fg-two"></div>
+      <div className="trees-one"></div>
+      <div className="river"></div>
     </div>
   )
 }
