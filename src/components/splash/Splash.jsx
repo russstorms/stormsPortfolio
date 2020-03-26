@@ -7,11 +7,16 @@ const Splash = () => {
 
   return (
     <section className="Splash">
-      <h1>Hey! I'm Russ Storms</h1>
-      <h5>Developer | Engineer | Designer</h5>
+      <h1>
+        Hey! I'm
+        <span className="name"> Russ Storms</span>
+      </h1>
+      <h5>
+        Developer | Engineer | Designer
+      </h5>
       <button 
         onClick={() => scrollToSection('projects')}>
-          View my work
+          View Projects
       </button>
     </section>
   )

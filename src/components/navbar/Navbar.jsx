@@ -6,15 +6,11 @@ import './Navbar.css'
 const Navbar = () => {
 
   return (
-    <section>
+    <section
+      className="Navbar"
+    >
       <nav
-      style={{
-        display: 'flex',
-        justifyContent: 'left',
-        cursor: 'pointer',
-        backgroundColor: '#272A33',
-        color: '#FFFFFF'
-      }}
+        className="clipped-nav"
       >
         <h4
           className="nav-link"

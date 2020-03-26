@@ -16,16 +16,10 @@ function App() {
       <header className="App-header">
         <Splash />
       </header>
-      <div
-        style={{
-          padding: '0 150px'
-        }}
-      >
-        <Navbar />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
+      <Navbar />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   )
 }

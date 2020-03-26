@@ -1,10 +1,20 @@
+.clipped-nav {
+  padding-left: 150px;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .nav-link {
   padding: 0 35px;
   transition: all .5s ease-in-out;
 }
 
 .nav-link:hover {
-  color: #afd2ff;
   transition: all .5s ease-in-out;
   background-color: transparent;
 }
+

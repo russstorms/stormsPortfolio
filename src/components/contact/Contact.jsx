@@ -1,13 +1,13 @@
 import React from 'react'
 import { scrollToSection } from '../../helpers/scrollToSection'
 
+import './Contact.css'
+
 const Contact = () => {
   return (
     <section
+      className="Contact"
       id="contact"
-      style={{
-        paddingBottom: '50px'
-      }}
     >
       <h1>Contact</h1>
       <p>Have a question or want to work together?</p>
