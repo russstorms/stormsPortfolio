@@ -16,12 +16,19 @@ function App() {
       <header className="App-header">
         <Splash />
       </header>
-      <Navbar />
-      <About />
-      <Projects />
-      <Contact />
+      <div
+        style={{
+          padding: '0 150px'
+        }}
+      >
+        <Navbar />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   )
 }
 
 export default App
+

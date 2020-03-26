@@ -1,0 +1,10 @@
+.nav-link {
+  padding: 0 35px;
+  transition: all .5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #afd2ff;
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+}
