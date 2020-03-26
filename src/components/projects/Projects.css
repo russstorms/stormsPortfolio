@@ -1,22 +1,70 @@
+.Projects {
+	position: relative;
+	height: 130vh;
+}
+
 .projects-container {
+	position: relative;
 	display: flex;
   flex-wrap: wrap;
   align-items: center;
 	justify-content: space-around;
+	z-index: 1;
 }
 
 .sun {
 	content: "";
   position: absolute;
-	top: 700px;
+	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	max-width: 100%;
 	height: auto;
 	background-image: url(../../images/sun.svg);
-	background-size: 80%;
+	background-size: 2100px 2400px;
 	background-repeat: no-repeat;
 }
 
+.mountain-one {
+	content: "";
+  position: absolute;
+	top: 950px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
+	background-image: url(../../images/mountain-one.svg);
+	background-size: 500px 500px;
+	background-repeat: no-repeat;
+}
 
+.mountain-two {
+	content: "";
+  position: absolute;
+	top: 1000px;
+	right: 0;
+	bottom: 0;
+	left: 360px;
+	max-width: 100%;
+	z-index: 1;
+	height: auto;
+	background-image: url(../../images/mountain-two.svg);
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}
+
+.mountain-three {
+	content: "";
+  position: absolute;
+	top: 900px;
+	right: 0;
+	bottom: 0;
+	left: 750px;
+	max-width: 100%;
+	height: auto;
+	background-image: url(../../images/mountain-three.svg);
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+}

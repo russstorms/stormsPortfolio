@@ -9,9 +9,6 @@ const Projects = () => {
       className="Projects"
     >
       <section
-        style={{
-          height: '100vh',
-        }}
         id="projects"
         className="padded-section"
       >
@@ -64,6 +61,9 @@ const Projects = () => {
         </div>
       </section>
       <div className="sun"></div>
+      <div className="mountain-one"></div>
+      <div className="mountain-two"></div>
+      <div className="mountain-three"></div>
     </div>
   )
 }
