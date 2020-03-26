@@ -68,14 +68,54 @@ const Projects = () => {
       >
         <div className="sun"></div>
       </ScrollAnimation>
-      <div className="mountain-one"></div>
-      <div className="mountain-two"></div>
-      <div className="mountain-three"></div>
-      <div className="mountain-four"></div>
-      <div className="mountain-fg-one"></div>
-      <div className="mountain-fg-two"></div>
-      <div className="trees-one"></div>
-      <div className="river"></div>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-one"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-four"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-three"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-two"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-fg-one"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="mountain-fg-two"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="river"></div>
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateIn="fadeIn"
+        animateOut="fadeOut"
+      >
+        <div className="trees-one"></div>
+      </ScrollAnimation>
     </div>
   )
 }
