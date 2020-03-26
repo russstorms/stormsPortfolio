@@ -24,6 +24,7 @@
 	background-image: url(../../images/sun.svg);
 	background-size: 2100px 2400px;
 	background-repeat: no-repeat;
+	clip-path: polygon(0 0, 100% 0%, 100% 86%, 0 86%);
 }
 
 .mountain-one {
