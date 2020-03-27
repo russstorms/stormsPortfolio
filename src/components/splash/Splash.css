@@ -1,4 +1,33 @@
-.name {
-  font-weight: 900;
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.Splash {
+  font-family: 'Julius Sans One', sans-serif;
 }
+
+.lightning-bolt {
+  height: 50px;
+  width: 50px;
+}
+
+.intro-first-name, .intro-last-name, .intro-titles {
+  display: flex;
+}
+
+.intro-first-name, .intro-last-name {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.intro-titles {
+  font-size: .8em;
+}
+
+.arrow-button-container {
+  padding-top: 55px;
+}
+  .projects-arrow-button {
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
 

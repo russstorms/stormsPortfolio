@@ -1,7 +1,9 @@
 .clipped-nav {
-  padding-left: 150px;
+  border-top: 5px solid #4682b4;
+  padding-left: 60px;
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   display: flex;
+  flex-wrap: wrap;
   justify-content: left;
   cursor: pointer;
   color: #FFFFFF;
