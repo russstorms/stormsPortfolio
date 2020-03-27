@@ -51,7 +51,7 @@
 
   .projects-arrow-button-two {
     cursor: pointer;
-    margin-top: -20px;
+    margin-top: -25px;
     animation: movingArrowTwo 4s ease infinite;
   }
 
