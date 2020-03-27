@@ -1,7 +1,8 @@
 import React from 'react'
 import { scrollToSection } from '../../helpers/scrollToSection'
 import { animated, useTrail, useSpring, config } from 'react-spring'
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
+// import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import './Splash.css'
 
@@ -62,13 +63,20 @@ const Splash = () => {
     delay: 3000,
     config: { tension: 20, friction: 10 }
   })
+  // Arrow animation
+  const arrowSpring = useSpring({
+    from: { opacity: 0 },
+    to: async next => {
+      await next({ opacity: 1 })
+    },
+    delay: 500,
+    config: { tension: 20, friction: 10 }
+  })
 
   return (
     <section className="Splash">
       <animated.svg
-        width="100"
-        height="100"
-        viewBox="0 0 54 54"
+        viewBox="0 0 25 25"
         className="lightning-bolt"
         style={svgSpring}
         strokeDashoffset={svgSpring.x}
@@ -77,7 +85,24 @@ const Splash = () => {
         <path
           fill="none"
           stroke="gold"
-          strokeWidth="2"
+          strokeWidth=".5"
+          strokeDasharray="60"
+          height="100%"
+          width="100%"
+          d="M7 2v11h3v9l7-12h-4l4-8z"
+        />
+      </animated.svg>
+      <animated.svg
+        viewBox="0 0 25 25"
+        className="lightning-bolt-two"
+        style={svgSpring}
+        strokeDashoffset={svgSpring.x}
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="none"
+          stroke="yellow"
+          strokeWidth=".2"
           strokeDasharray="60"
           height="100%"
           width="100%"
@@ -124,15 +149,20 @@ const Splash = () => {
           </animated.div>
         ))}
       </div>
-      <div
+      <animated.div
+        style={arrowSpring}
+        onClick={() => scrollToSection('projects')}
         className="arrow-button-container"
       >
-        <DoubleArrowIcon
-          onClick={() => scrollToSection('projects')}
+        <KeyboardArrowDownIcon
           className="projects-arrow-button"
           fontSize="large"
         />
-      </div>
+        <KeyboardArrowDownIcon
+          className="projects-arrow-button-two"
+          fontSize="large"
+        />
+      </animated.div>
     </section>
   )
 }

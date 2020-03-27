@@ -5,13 +5,22 @@
 }
 
 .lightning-bolt {
-  height: 50px;
-  width: 50px;
+  max-width: 182px;
+  height: auto;
   position: absolute;
-  top: 42%;
-  left: 51%;
+  top: 33%;
+  left: 50%;
+  z-index: 1;
   transform: rotate(45deg);
-  background: 200px 300px;
+}
+
+.lightning-bolt-two {
+  max-width: 175px;
+  height: auto;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: rotate(45deg);
 }
 
 .intro-first-name, .intro-last-name, .intro-titles {
@@ -29,10 +38,45 @@
 }
 
 .arrow-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 55px;
 }
   .projects-arrow-button {
-    transform: rotate(90deg);
     cursor: pointer;
+    animation: movingArrow 4s ease infinite;
   }
 
+  .projects-arrow-button-two {
+    cursor: pointer;
+    margin-top: -20px;
+    animation: movingArrowTwo 4s ease infinite;
+  }
+
+  @keyframes movingArrow {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes movingArrowTwo {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+ 
+ 
