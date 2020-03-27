@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { scrollToSection } from '../../helpers/scrollToSection'
 import { animated, useTrail, useSpring, config } from 'react-spring'
-// import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import './Splash.css'
 
 const Splash = () => {
+  const [ flicker, setFlicker ] = useState(null)
+
   // Create arrays for React Spring to map
   const firstName = [`R`, `u`, `s`, `s`]
   const lastName = [`S`, `t`, `o`, `r`, `m`, `s`]
@@ -27,6 +28,7 @@ const Splash = () => {
     },
     config: { tension: 250, friction: 50 }
   })
+
   // Last name animation
   const lastNameSpring = useTrail(lastName.length, {
     from: {
@@ -43,6 +45,7 @@ const Splash = () => {
     },
     config: { tension: 280, friction: 100 }
   })
+
   // Title animation
   const titleSpring = useTrail(titlesArr.length, {
     from: {
@@ -54,15 +57,21 @@ const Splash = () => {
     delay: 1500,
     config: { tension: 20, friction: 10 }
   })
+
   // SVG animation
   const svgSpring = useSpring({
     from: { x: 0, opacity: 0 },
     to: async next => {
       await next({ x: 120, opacity: 1 })
+      // while (1) {
+      //   await next({ opacity: 0.5 })
+      //   await next({ opacity: 1 })
+      // }
     },
     delay: 3000,
     config: { tension: 20, friction: 10 }
   })
+
   // Arrow animation
   const arrowSpring = useSpring({
     from: { opacity: 0 },
@@ -73,11 +82,15 @@ const Splash = () => {
     config: { tension: 20, friction: 10 }
   })
 
+  const flickerBolt = setTimeout(() => {
+    setFlicker(true)
+  }, 5000)
+
   return (
     <section className="Splash">
       <animated.svg
         viewBox="0 0 25 25"
-        className="lightning-bolt"
+        className={`lightning-bolt ${flicker ? 'flicker' : ''}`}
         style={svgSpring}
         strokeDashoffset={svgSpring.x}
         preserveAspectRatio="none"
@@ -94,7 +107,7 @@ const Splash = () => {
       </animated.svg>
       <animated.svg
         viewBox="0 0 25 25"
-        className="lightning-bolt-two"
+        className={`lightning-bolt-two ${flicker ? 'flicker' : ''}`}
         style={svgSpring}
         strokeDashoffset={svgSpring.x}
         preserveAspectRatio="none"

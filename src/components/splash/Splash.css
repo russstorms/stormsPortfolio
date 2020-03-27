@@ -23,6 +23,40 @@
   transform: rotate(45deg);
 }
 
+.flicker {
+  animation: flicker 4s ease infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.4
+  }
+  5% {
+    opacity: 1
+  }
+  10% {
+    opacity: 0.6
+  }
+  15% {
+    opacity: 1
+  }
+  25% {
+    opacity: 0.3
+  }
+  40% {
+    opacity: 0.6
+  }
+  60% {
+    opacity: 1
+  }
+  80% {
+    opacity: 0.2
+  }
+  100% {
+    opacity: 1
+  }
+}
+
 .intro-first-name, .intro-last-name, .intro-titles {
   display: flex;
 }
