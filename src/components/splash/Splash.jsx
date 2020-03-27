@@ -1,7 +1,6 @@
 import React from 'react'
 import { scrollToSection } from '../../helpers/scrollToSection'
-import { animated, useTrail, config } from 'react-spring'
-import { Spring } from 'react-spring/renderprops'
+import { animated, useTrail, useSpring, config } from 'react-spring'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow'
 
 import './Splash.css'
@@ -54,40 +53,37 @@ const Splash = () => {
     delay: 1500,
     config: { tension: 20, friction: 10 }
   })
+  // SVG animation
+  const svgSpring = useSpring({
+    from: { x: 0, opacity: 0 },
+    to: async next => {
+      await next({ x: 120, opacity: 1 })
+    },
+    delay: 3000,
+    config: { tension: 20, friction: 10 }
+  })
 
   return (
     <section className="Splash">
-      <Spring
-        delay="3500"
-        from={{
-          x: 0,
-          opacity: 0,
-        }}
-        to={{
-          x: 120,
-          opacity: 1,
-        }}
+      <animated.svg
+        width="100"
+        height="100"
+        viewBox="0 0 54 54"
+        className="lightning-bolt"
+        style={svgSpring}
+        strokeDashoffset={svgSpring.x}
+        preserveAspectRatio="none"
       >
-        {props => (
-          <svg
-            style={{
-              opacity: 0
-            }}
-            className="lightning-bolt"
-            strokeDashoffset={props.x}
-          >
-            <path
-              fill="none"
-              stroke="gold"
-              stroke-width="2"
-              strokeDasharray="60"
-              height="100%"
-              width="100%"
-              d="M7 2v11h3v9l7-12h-4l4-8z"
-            />
-          </svg>
-        )}
-      </Spring>
+        <path
+          fill="none"
+          stroke="gold"
+          strokeWidth="2"
+          strokeDasharray="60"
+          height="100%"
+          width="100%"
+          d="M7 2v11h3v9l7-12h-4l4-8z"
+        />
+      </animated.svg>
       <div 
         className="intro-name-container"
       >

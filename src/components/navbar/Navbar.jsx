@@ -9,6 +9,7 @@ const Navbar = () => {
     <section
       className="Navbar"
     >
+      <div className="nav-neon-border" />
       <nav
         className="clipped-nav"
       >

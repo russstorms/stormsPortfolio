@@ -1,3 +1,7 @@
+.nav-neon-border {
+  border-top: 2px solid gold;
+}
+
 .clipped-nav {
   border-top: 5px solid #4682b4;
   padding-left: 60px;
