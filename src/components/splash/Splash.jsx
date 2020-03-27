@@ -4,6 +4,7 @@ import { animated, useTrail, useSpring, config } from 'react-spring'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import './Splash.css'
+import '../responsive.css'
 
 const Splash = () => {
   const [ flicker, setFlicker ] = useState(null)
@@ -63,10 +64,6 @@ const Splash = () => {
     from: { x: 0, opacity: 0 },
     to: async next => {
       await next({ x: 120, opacity: 1 })
-      // while (1) {
-      //   await next({ opacity: 0.5 })
-      //   await next({ opacity: 1 })
-      // }
     },
     delay: 3000,
     config: { tension: 20, friction: 10 }

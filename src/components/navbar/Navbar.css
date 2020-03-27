@@ -11,7 +11,7 @@
   justify-content: left;
   cursor: pointer;
   color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-link {
@@ -22,5 +22,6 @@
 .nav-link:hover {
   transition: all .5s ease-in-out;
   background-color: transparent;
+  color: #4682b4;
 }
 

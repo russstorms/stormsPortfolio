@@ -1,0 +1,48 @@
+@media only screen and (min-height: 768px) {
+  .lightning-bolt {
+    max-width: 170px;
+    top: 23%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 155px;
+    top: 25%;
+  }
+}
+
+@media only screen and (min-height: 942px) {
+  .lightning-bolt {
+    max-width: 190px;
+    top: 26.5%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 170px;
+    top: 28.5%;
+  }
+}
+
+@media only screen and (min-height: 1120px) {
+  .lightning-bolt {
+    max-width: 200px;
+    top: 30%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 195px;
+    top: 31%;
+  }
+}
+
+
+@media only screen and (min-height: 1250px) {
+  .lightning-bolt {
+    max-width: 200px;
+    top: 31%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 195px;
+    top: 32%;
+  }
+}
