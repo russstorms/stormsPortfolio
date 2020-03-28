@@ -1,9 +1,10 @@
 .Contact {
   position: relative;
   padding: 50px;
-  color: #45474A;
+  color: #FFFFFF;
   text-align: center;
   clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+  background-color: #141414;
 }
 
 .github-icon, .linkedin-icon {

@@ -1,12 +1,26 @@
 .About {
-  background-color: #F5F5F5;
-  color: #45474A;
+  background-color: #141414;
+  color: #FFFFFF;
 }
 
-.profile-pic {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+.about-container {
+  display: flex;
 }
 
 .about-info-container {
-
+  flex-basis: 100%;
+  padding: 0 25px;
 }
+
+.about-side {
+  flex-basis: 100%;
+  padding: 0 25px;
+}
+
+.profile-pic {
+  max-width: 250px;
+  height: auto;
+  clip-path: polygon(38% 0, 70% 19%, 83% 29%, 75% 48%, 69% 70%, 76% 100%, 25% 73%, 30% 43%, 0 27%, 0 0);
+  border: 1px solid gold;
+}
+

@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <section
-      className="Contact"
+      className="Contact padded-section"
       id="contact"
     >
       <h1 className="section-title">Contact</h1>

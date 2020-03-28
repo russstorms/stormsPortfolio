@@ -12,51 +12,27 @@ const Projects = () => {
         id="projects"
         className="padded-section"
       >
-        <h1 className="section-title">Projects</h1>
+        <h1 className="section-title projects-title">Projects</h1>
         <div
           className="projects-container"
         >
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
           <div className="project">
-            <h4>Project Title</h4>
-            <h5>Project Tech</h5>
             <img src="http://placeimg.com/180/180/animals" alt="project" />
-            <p>Github Link</p>
-            <p>Website Link</p>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 .nav-neon-border {
-  border-top: 2px solid gold;
+  border-top: 2px solid #ffd700;
 }
 
 .clipped-nav {
@@ -10,8 +10,8 @@
   flex-wrap: wrap;
   justify-content: left;
   cursor: pointer;
-  color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #4682b4;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .nav-link {
@@ -22,6 +22,6 @@
 .nav-link:hover {
   transition: all .5s ease-in-out;
   background-color: transparent;
-  color: #4682b4;
+  color: #ffd700;
 }
 

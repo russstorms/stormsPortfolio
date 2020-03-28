@@ -1,6 +1,6 @@
 .Projects {
-	background-color: #FFFFFF;
-	color: #45474A;
+	background-color: #202020;
+	color: #FFFFFF;
 }
 
 .projects-container {
@@ -9,6 +9,10 @@
   align-items: center;
 	justify-content: space-around;
 	z-index: 1;
+}
+
+.projects-title {
+	justify-content: flex-end;
 }
 
 .project {
