@@ -8,6 +8,7 @@
 
 .github-icon, .linkedin-icon {
   padding: 0 15px;
+  transition: .3s ease-in-out !important;
 }
 
 .github-icon:hover, .linkedin-icon:hover {
