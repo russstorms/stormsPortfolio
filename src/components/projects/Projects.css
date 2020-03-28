@@ -5,9 +5,10 @@
 
 .projects-container {
 	display: flex;
+	position: relative;
   flex-wrap: wrap;
   align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	z-index: 1;
 }
 
@@ -16,6 +17,42 @@
 }
 
 .project {
-	z-index: 10;
+	display: block;
+	position: relative;
+	margin: 0;
 }
-
+	.overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #ffffff;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .8s ease;
+	}
+	.project:hover .overlay {
+		opacity: 1;
+	}
+	.project-name {
+		text-transform: uppercase;
+		cursor: default;
+	}
+	.project-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+	.project-text, .project-text a {
+		text-decoration: none;
+		color: #4682b4;
+	}
+		.project-text a:hover {
+			color: #ffd700;
+		}

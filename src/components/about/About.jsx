@@ -19,8 +19,8 @@ const About = () => {
             alt="picture of me"
           />
           <p>
-            Hey! I'm Russ. I found my passion for clean UI when I was a kid
-            making and editing skateboarding videos with my brother. A love of video
+            Hey! I'm Russ. I found my passion for clean UI as a kid
+            filming and editing skateboarding videos with my brother. A love of video
             editing led to learning Adobe Photoshop, and eventually Javascript!
           </p>
           <p>
@@ -28,7 +28,7 @@ const About = () => {
             and spending time with my girlfriend and our little pup!
           </p>
           <p>
-            I am a detailed oriented person, immersed in the frontend spectrum, and enjoy
+            I am a detail oriented person, immersed in the frontend spectrum, and enjoy
             working on ambitious projects with a great team. Remote work is preferrable!
           </p>
         </article>
