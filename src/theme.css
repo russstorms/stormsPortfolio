@@ -2,3 +2,19 @@ section.padded-section {
   padding: 50px 150px;
 }
 
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #45474A;
+}
+
+.secondary-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+

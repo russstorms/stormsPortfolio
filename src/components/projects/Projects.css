@@ -1,3 +1,8 @@
+.Projects {
+	background-color: #FFFFFF;
+	color: #45474A;
+}
+
 .projects-container {
 	display: flex;
   flex-wrap: wrap;

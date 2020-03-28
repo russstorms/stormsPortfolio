@@ -1,14 +1,15 @@
 import React from 'react'
 
+import './About.css'
 import '../../theme.css'
 
 const About = () => {
   return (
     <section
       id="about"
-      className="padded-section"
+      className="About padded-section"
     >
-      <h1>About Me</h1>
+      <h1 className="section-title">About Me</h1>
       <h4>Hobbies</h4>
     </section>
   )
