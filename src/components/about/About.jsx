@@ -93,7 +93,7 @@ const About = () => {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={800}
+                delay={900}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
@@ -111,7 +111,7 @@ const About = () => {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={800}
+                delay={1000}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
