@@ -29,7 +29,7 @@ const Contact = () => {
         {({ isVisible }) => (
           <div className="contact-title-container">
             <Spring
-              delay={500}
+              delay={300}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
                 opacity: isVisible ? 1 : 0,
@@ -45,7 +45,7 @@ const Contact = () => {
               }
             </Spring>
             <Spring
-              delay={800}
+              delay={600}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
                 opacity: isVisible ? 1 : 0,

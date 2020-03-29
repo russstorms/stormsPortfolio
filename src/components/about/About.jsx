@@ -24,7 +24,7 @@ const About = () => {
       className="About padded-section"
     >
       <animated.svg
-        viewBox="0 0 25 25"
+        viewBox="0 0 18 23"
         className="lightning-strike"
         style={svgSpring}
         strokeDashoffset={svgSpring.x}
@@ -44,7 +44,7 @@ const About = () => {
         {({ isVisible }) => (
           <div className="about-title-container">
             <Spring
-              delay={500}
+              delay={300}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
                 opacity: isVisible ? 1 : 0,
@@ -60,7 +60,7 @@ const About = () => {
               }
             </Spring>
             <Spring
-              delay={800}
+              delay={600}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
                 opacity: isVisible ? 1 : 0,

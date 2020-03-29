@@ -49,8 +49,9 @@
   max-width: 100%;
   height: auto;
   position: absolute;
+  top: 57%;
   left: 0;
   z-index: 0;
-  transform: rotate(145deg);
+  transform: rotate(122deg);
 }
 
