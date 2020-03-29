@@ -21,40 +21,44 @@ const Navbar = () => {
   }, [])
 
   return (
-    <section
-      className="Navbar"
-      id="navbar"
+    <div
+      className="nav-wrapper"
     >
-      <div className="nav-neon-border" />
-      <nav
-        className="clipped-nav"
+      <section
+        className="Navbar"
+        id="navbar"
       >
-        <h4
-          className="nav-link"
-          onClick={() => scrollToSection('home')}
+        <div className="nav-neon-border" />
+        <nav
+          className="clipped-nav"
         >
-          Home
-        </h4>
-        <h4
-          className="nav-link"
-          onClick={() => scrollToSection('about')}
-        >
-          About
-        </h4>
-        <h4
-          className="nav-link"
-          onClick={() => scrollToSection('projects')}
-        >
-          Portfolio
-        </h4>
-        <h4
-          className="nav-link"
-          onClick={() => scrollToSection('contact')}
-        >
-          Contact
-        </h4>
-      </nav>
-    </section>
+          <h4
+            className="nav-link"
+            onClick={() => scrollToSection('home')}
+          >
+            Home
+          </h4>
+          <h4
+            className="nav-link"
+            onClick={() => scrollToSection('about')}
+          >
+            About
+          </h4>
+          <h4
+            className="nav-link"
+            onClick={() => scrollToSection('projects')}
+          >
+            Portfolio
+          </h4>
+          <h4
+            className="nav-link"
+            onClick={() => scrollToSection('contact')}
+          >
+            Contact
+          </h4>
+        </nav>
+      </section>
+    </div>
   )
 }
 
