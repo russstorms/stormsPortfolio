@@ -17,7 +17,7 @@ const Projects = () => {
           className="projects-container"
         >
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -31,7 +31,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -45,7 +45,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -59,7 +59,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -73,7 +73,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -87,7 +87,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -101,7 +101,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -115,7 +115,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -129,7 +129,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
@@ -143,7 +143,7 @@ const Projects = () => {
               </div>
           </div>
           <div className="project">
-            <img src="http://placeimg.com/180/180/animals" alt="project" />
+            <img src="http://placeimg.com/250/250/animals" alt="project" />
               <div className="overlay">
                 <div className="project-text">
                   <h5 className="project-name">Project Name</h5>
