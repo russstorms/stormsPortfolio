@@ -1,5 +1,6 @@
 import React from 'react'
 import profilePic from '../../images/profilePic.jpg'
+import { animated, useSpring } from 'react-spring'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
@@ -7,12 +8,38 @@ import './About.css'
 import '../../theme.css'
 
 const About = () => {
+  // SVG animation
+  const svgSpring = useSpring({
+    from: { x: 60, opacity: 0 },
+    to: async next => {
+      await next({ x: 120, opacity: 1 })
+    },
+    // delay: 2000,
+    config: { tension: 40, friction: 10 }
+  })
 
   return (
     <section
       id="about"
       className="About padded-section"
     >
+      <animated.svg
+        viewBox="0 0 25 25"
+        className="lightning-strike"
+        style={svgSpring}
+        strokeDashoffset={svgSpring.x}
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="none"
+          stroke="rgba(255, 215, 0, 0.5)"
+          strokeWidth=".1"
+          strokeDasharray="60"
+          height="100%"
+          width="100%"
+          d="M7 2v11h3v9l7"
+        />
+      </animated.svg>
       <VisibilitySensor>
         {({ isVisible }) => (
           <div className="about-title-container">

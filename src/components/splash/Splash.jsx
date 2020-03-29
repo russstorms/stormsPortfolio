@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { scrollToSection } from '../../helpers/scrollToSection'
-import { animated, useTrail, useSpring, config } from 'react-spring'
+import { animated, useTrail, useSpring } from 'react-spring'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import './Splash.css'
