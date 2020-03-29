@@ -3,8 +3,16 @@
   color: #FFFFFF;
 }
 
+.about-title-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0px;
+  width: 110px;
+}
+
 .about-container {
   display: flex;
+  padding-top: 35px;
 }
 
 .about-info-container {
@@ -21,6 +29,10 @@
   max-width: 250px;
   height: auto;
   clip-path: polygon(38% 0, 70% 19%, 83% 29%, 75% 48%, 69% 70%, 76% 100%, 25% 73%, 30% 43%, 0 27%, 0 0);
-  border: 1px solid gold;
+}
+
+.about-underline {
+  height: 3px;
+  background-color: #ffd700;
 }
 

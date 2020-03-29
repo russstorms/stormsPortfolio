@@ -10,7 +10,7 @@ const Projects = () => {
     >
       <section
         id="projects"
-        className="padded-section"
+        className="wide-padded-section"
       >
         <h1 className="section-title projects-title">Projects</h1>
         <div

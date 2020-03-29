@@ -2,11 +2,16 @@ section.padded-section {
   padding: 50px 150px;
 }
 
+section.wide-padded-section {
+  padding: 50px 20px;
+}
+
 .section-title {
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #ffd700;
   font-size: 2em;
+  margin-bottom: 0;
 }
 

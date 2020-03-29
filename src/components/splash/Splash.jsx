@@ -79,7 +79,7 @@ const Splash = () => {
     config: { tension: 20, friction: 10 }
   })
 
-  const flickerBolt = setTimeout(() => {
+  setTimeout(() => {
     setFlicker(true)
   }, 5000)
 

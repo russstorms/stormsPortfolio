@@ -1,16 +1,54 @@
 import React from 'react'
 import profilePic from '../../images/profilePic.jpg'
+import { Spring, animated } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import './About.css'
 import '../../theme.css'
 
 const About = () => {
+
   return (
     <section
       id="about"
       className="About padded-section"
     >
-      <h1 className="section-title">About</h1>
+      <VisibilitySensor>
+        {({ isVisible }) => (
+          <div className="about-title-container">
+            <Spring
+              delay={500}
+              to={{
+                transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
+                opacity: isVisible ? 1 : 0
+              }}
+            >
+              {({ transform, opacity }) =>
+                <h1
+                  className="section-title"
+                  style={{transform, opacity}}
+                >
+                  About
+                </h1>
+              }
+            </Spring>
+            <Spring
+              delay={800}
+              to={{
+                transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
+                opacity: isVisible ? 1 : 0
+              }}
+            >
+              {({ transform, opacity }) =>
+                <div
+                  className="about-underline"
+                  style={{transform, opacity}}
+                />
+              }
+            </Spring>
+          </div>
+        )}
+      </VisibilitySensor>
       <div className="about-container">
         <article className="about-info-container">
           <img
