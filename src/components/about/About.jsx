@@ -77,11 +77,10 @@ const About = () => {
                 delay={800}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  color: isVisible ? 'white' : 'steelblue'
                 }}
               >
-                {({ opacity, color }) =>
-                  <p style={{opacity, color}}>
+                {({ opacity }) =>
+                  <p style={{opacity}}>
                     Hey! I'm Russ. I found my passion for clean UI as a kid
                     filming and editing skateboarding videos with my brother. A love of video
                     editing led to learning Adobe Photoshop, and eventually Javascript!
@@ -97,11 +96,10 @@ const About = () => {
                 delay={800}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  color: isVisible ? 'white' : 'steelblue'
                 }}
               >
-                {({ opacity, color }) =>
-                  <p style={{opacity, color}}>
+                {({ opacity }) =>
+                  <p style={{opacity}}>
                     A big fan of MMA (love Jiu Jitsu), outdoor activities, creative writing,
                     and spending time with my girlfriend and our little pup!
                   </p>
@@ -116,11 +114,10 @@ const About = () => {
                 delay={800}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  color: isVisible ? 'white' : 'steelblue'
                 }}
               >
-                {({ opacity, color }) =>
-                  <p style={{opacity, color}}>
+                {({ opacity }) =>
+                  <p style={{opacity}}>
                     I am a detail oriented person, immersed in the frontend spectrum, and enjoy
                     working on ambitious projects with a great team. Remote work is preferrable!
                   </p>

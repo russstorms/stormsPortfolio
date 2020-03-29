@@ -15,11 +15,10 @@
 
 .projects-title-container {
 	flex-direction: column;
-	/* max-width: 200px; */
-	/* margin-left: 85%; */
+	flex-grow: 1;
 }
 	.projects-title {
-		justify-content: flex-end;
+		/* justify-content: flex-end; */
 	}
 	.projects-underline {
 		height: 3px;

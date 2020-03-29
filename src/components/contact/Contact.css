@@ -6,6 +6,17 @@
   background-color: #141414;
 }
 
+.contact-title-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0px;
+  width: 150px;
+}
+  .contact-underline {
+    height: 3px;
+    background-color: #4682b4;
+  }
+
 .github-icon, .linkedin-icon {
   padding: 0 15px;
   transition: .3s ease-in-out !important;
