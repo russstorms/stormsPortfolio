@@ -13,5 +13,9 @@ section.wide-padded-section {
   color: #ffd700;
   font-size: 2em;
   margin: 0;
+  cursor: default;
 }
 
+p {
+  cursor: default;
+}
