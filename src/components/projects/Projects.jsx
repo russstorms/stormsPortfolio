@@ -2,13 +2,16 @@ import React from 'react'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
+import { projectsData } from '../../projectsData'
+
 import Project from '../project/Project'
 
 import '../../theme.css'
 import './Projects.css'
 
 const Projects = () => {
-
+  const projects = projectsData.projects
+  console.log(projects)
   return (
     <div
       className="Projects"
@@ -57,8 +60,14 @@ const Projects = () => {
         <div
           className="projects-container"
         >
-          {/* MAP PROJECTS HERE */}
-          <Project />
+          {projects.map((project) => {
+            return (
+              <Project
+              key={project.id}
+              project={project}
+            />
+            )
+          })}
         </div>
       </section>
     </div>
