@@ -72,16 +72,28 @@ const Contact = () => {
             {({ opacity }) =>
               <div style={{opacity}}>
                 <p>Have a question or want to work together?</p>
-                <GitHubIcon
-                  className="github-icon"
-                  aria-label="Github.com"
-                  onClick={() => window.open('https://github.com/rstorms90')}
-                />
-                <LinkedInIcon
-                  className="linkedin-icon"
-                  aria-label="LinkedIn.com"
-                  onClick={() => window.open('https://www.linkedin.com/in/russell-storms1003/')}
-                />
+                <div
+                  className="contact-btn-container"
+                >
+                  <button
+                    className="contact-btn"
+                    aria-label="Github.com"
+                    onClick={() => window.open('https://github.com/rstorms90')}
+                  >
+                    <GitHubIcon
+                      className="github-icon"
+                    />
+                  </button>
+                  <button
+                    className="contact-btn"
+                    aria-label="LinkedIn.com"
+                    onClick={() => window.open('https://www.linkedin.com/in/russell-storms1003/')}
+                  >
+                    <LinkedInIcon
+                      className="linkedin-icon"
+                    />
+                  </button>
+                </div>
               </div>
             }
           </Spring>

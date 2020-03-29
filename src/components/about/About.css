@@ -36,3 +36,8 @@
   background-color: #4682b4;
 }
 
+.placeholder-pic {
+  max-width: 400px;
+  height: auto;
+}
+

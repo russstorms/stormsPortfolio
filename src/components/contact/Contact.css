@@ -17,13 +17,28 @@
     background-color: #4682b4;
   }
 
-.github-icon, .linkedin-icon {
-  padding: 0 15px;
-  transition: .3s ease-in-out !important;
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
 }
+  .contact-btn {
+    width: 100px;
+    padding: 5px 25px;
+    margin: 5px;
+    background: transparent;
+    border: 1px solid #ffd700;
+    transition: .3s ease-in-out;
+  }
+  .contact-btn:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+  }
+  .contact-btn:hover .github-icon, .contact-btn:hover .linkedin-icon {
+    color: #141414;
+  }
 
-.github-icon:hover, .linkedin-icon:hover {
-  cursor: pointer;
-  color: gold;
+.github-icon, .linkedin-icon {
+  color: #ffd700;
+  transition: .3s ease-in-out !important;
 }
 

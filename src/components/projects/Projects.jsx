@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSpring, animated } from "react-spring"
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
@@ -6,6 +7,8 @@ import '../../theme.css'
 import './Projects.css'
 
 const Projects = () => {
+  const [{ y, color}, set] = useSpring(() => ({ y: 100, color: '#FFFFFF' }))
+
   return (
     <div
       className="Projects"
@@ -54,10 +57,21 @@ const Projects = () => {
         <div
           className="projects-container"
         >
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -65,13 +79,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -79,13 +104,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -93,13 +129,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -107,13 +154,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -121,13 +179,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -135,13 +204,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -149,13 +229,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -163,13 +254,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -177,13 +279,24 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
-          <div className="project">
+          <div
+            className="project"
+            onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+            onMouseLeave={() => set({ y: 100, color: 'gold' })}
+          >
             <img src="http://placeimg.com/250/250/animals" alt="project" />
-              <div className="overlay">
-                <div className="project-text">
+
+              <animated.div
+                style={{ transform: y.interpolate(v => `translateY(${v}%`) }}
+                className="overlay"
+              >
+                <animated.span
+                  className="project-text"
+                  style={{ color }}
+                >
                   <h5 className="project-name">Project Name</h5>
                   <a href="" alt="" target="_blank">
                     <h6>Site</h6>
@@ -191,8 +304,8 @@ const Projects = () => {
                   <a href="https://www.github.com/rstorms90" alt="" target="_blank">
                     <h6>Github</h6>
                   </a>
-                </div>
-              </div>
+                </animated.span>
+              </animated.div>
           </div>
         </div>
       </section>

@@ -1,9 +1,9 @@
 section.padded-section {
-  padding: 50px 150px;
+  padding: 100px 150px;
 }
 
 section.wide-padded-section {
-  padding: 50px 20px;
+  padding: 100px 20px;
 }
 
 .section-title {
@@ -12,6 +12,6 @@ section.wide-padded-section {
   text-transform: uppercase;
   color: #ffd700;
   font-size: 2em;
-  margin-bottom: 0;
+  margin: 0;
 }
 

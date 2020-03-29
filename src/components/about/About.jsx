@@ -127,15 +127,11 @@ const About = () => {
           </VisibilitySensor>
         </article>
         <div className="about-side">
-          About Side Content Here
-          <p>
-          Doggo ipsum floofs boof long water shoob you are doing me the shock stop it fren noodle horse borkdrive,
-          the neighborhood pupper noodle horse sub woofer floofs snoot ruff, smol borking doggo with a long snoot for pats
-          fat boi boofers smol borking doggo with a long snoot for pats ruff. Snoot long bois sub woofer super chub mlem super chub,
-          shooberino woofer porgo very jealous pupper clouds, I am bekom fat h*ck heckin good boys thicc. Big ol pupper such treat
-          adorable doggo heckin good boys doggo, doge most angery pupper I have ever seen fat boi. Wrinkler bork the neighborhood pupper
-          boof woofer bork, wrinkler tungg very taste wow very good spot. yapper heck. fluffer you are doing me a frighten.
-          </p>
+          <img
+            className="placeholder-pic"
+            src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1019&q=80"
+            alt="placeholder"
+          />
         </div>
       </div>
     </section>
