@@ -37,7 +37,7 @@ const About = () => {
           strokeDasharray="60"
           height="100%"
           width="100%"
-          d="M7 2v11h3v9l7"
+          d="M7 2v11h3v9"
         />
       </animated.svg>
       <VisibilitySensor>
