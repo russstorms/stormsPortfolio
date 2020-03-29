@@ -27,32 +27,3 @@
 	}
 	
 
-.project {
-	display: inline-block;
-	position: relative;
-	overflow: hidden;
-	margin: 0;
-}
-	.project-text {
-		z-index: 2;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
-	.project-text a {
-		text-decoration: none;
-		color: #FFFFFF;
-	}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: translateY(50%);
-}
-
-
