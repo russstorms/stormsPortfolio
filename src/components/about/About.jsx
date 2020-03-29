@@ -1,6 +1,6 @@
 import React from 'react'
 import profilePic from '../../images/profilePic.jpg'
-import { Spring, animated } from "react-spring/renderprops"
+import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
 import './About.css'
@@ -20,7 +20,7 @@ const About = () => {
               delay={500}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
-                opacity: isVisible ? 1 : 0
+                opacity: isVisible ? 1 : 0,
               }}
             >
               {({ transform, opacity }) =>
@@ -36,7 +36,7 @@ const About = () => {
               delay={800}
               to={{
                 transform: isVisible ? 'translate(50px)' : 'translate(-50px)',
-                opacity: isVisible ? 1 : 0
+                opacity: isVisible ? 1 : 0,
               }}
             >
               {({ transform, opacity }) =>
@@ -51,24 +51,83 @@ const About = () => {
       </VisibilitySensor>
       <div className="about-container">
         <article className="about-info-container">
-          <img
-            className="profile-pic"
-            src={profilePic}
-            alt="picture of me"
-          />
-          <p>
-            Hey! I'm Russ. I found my passion for clean UI as a kid
-            filming and editing skateboarding videos with my brother. A love of video
-            editing led to learning Adobe Photoshop, and eventually Javascript!
-          </p>
-          <p>
-            A big fan of MMA (love Jiu Jitsu), outdoor activities, creative writing,
-            and spending time with my girlfriend and our little pup!
-          </p>
-          <p>
-            I am a detail oriented person, immersed in the frontend spectrum, and enjoy
-            working on ambitious projects with a great team. Remote work is preferrable!
-          </p>
+          <VisibilitySensor offset={{ bottom: -300, top: -300 }}>
+            {({ isVisible }) => (
+              <Spring
+                delay={1200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                }}
+              >
+                {({ opacity }) =>
+                  <img
+                    style={{opacity}}
+                    className="profile-pic"
+                    src={profilePic}
+                    alt="picture of me"
+                  />
+                }
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={800}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  color: isVisible ? 'white' : 'steelblue'
+                }}
+              >
+                {({ opacity, color }) =>
+                  <p style={{opacity, color}}>
+                    Hey! I'm Russ. I found my passion for clean UI as a kid
+                    filming and editing skateboarding videos with my brother. A love of video
+                    editing led to learning Adobe Photoshop, and eventually Javascript!
+                  </p>
+                }
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={800}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  color: isVisible ? 'white' : 'steelblue'
+                }}
+              >
+                {({ opacity, color }) =>
+                  <p style={{opacity, color}}>
+                    A big fan of MMA (love Jiu Jitsu), outdoor activities, creative writing,
+                    and spending time with my girlfriend and our little pup!
+                  </p>
+                }
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={800}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  color: isVisible ? 'white' : 'steelblue'
+                }}
+              >
+                {({ opacity, color }) =>
+                  <p style={{opacity, color}}>
+                    I am a detail oriented person, immersed in the frontend spectrum, and enjoy
+                    working on ambitious projects with a great team. Remote work is preferrable!
+                  </p>
+                }
+              </Spring>
+            )}
+          </VisibilitySensor>
         </article>
         <div className="about-side">
           About Side Content Here

@@ -10,11 +10,22 @@
   align-items: center;
 	justify-content: center;
 	z-index: 1;
+	padding-top: 35px;
 }
 
-.projects-title {
-	justify-content: flex-end;
+.projects-title-container {
+	flex-direction: column;
+	/* max-width: 200px; */
+	/* margin-left: 85%; */
 }
+	.projects-title {
+		justify-content: flex-end;
+	}
+	.projects-underline {
+		height: 3px;
+		background-color: #4682b4;
+	}
+	
 
 .project {
 	display: block;
