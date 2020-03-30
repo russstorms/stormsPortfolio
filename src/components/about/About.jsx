@@ -23,7 +23,47 @@ const About = () => {
       id="about"
       className="About padded-section"
     >
-      <animated.svg
+      <VisibilitySensor>
+        {({ isVisible }) => (
+          <Spring
+            delay={0}
+            from={{
+              x: 60,
+              opacity: 0
+            }}
+            to={{
+              x: 120,
+              opacity: 1
+            }}
+            config={{
+              tension: 40,
+              friction: 10
+            }}
+          >
+            {({ x, opacity }) => 
+              <svg
+                viewBox="0 0 18 23"
+                className="lightning-strike"
+                style={{x, opacity}}
+                strokeDashoffset={x}
+                preserveAspectRatio="none"
+              >
+                <path
+                  fill="none"
+                  stroke="rgba(255, 215, 0, 0.5)"
+                  strokeWidth=".1"
+                  strokeDasharray="60"
+                  height="100%"
+                  width="100%"
+                  d="M7 2v11h3v9"
+                />
+              </svg>
+            }
+          </Spring>
+        )}
+      </VisibilitySensor>
+      
+      {/* <animated.svg
         viewBox="0 0 18 23"
         className="lightning-strike"
         style={svgSpring}
@@ -39,7 +79,8 @@ const About = () => {
           width="100%"
           d="M7 2v11h3v9"
         />
-      </animated.svg>
+      </animated.svg> */}
+      
       <VisibilitySensor>
         {({ isVisible }) => (
           <div className="about-title-container">

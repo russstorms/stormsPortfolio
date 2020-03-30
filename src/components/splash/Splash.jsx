@@ -66,7 +66,7 @@ const Splash = () => {
       await next({ x: 120, opacity: 1 })
     },
     delay: 3000,
-    config: { tension: 20, friction: 10 }
+    config: { tension: 25, friction: 10, clamp: true }
   })
 
   // Arrow animation

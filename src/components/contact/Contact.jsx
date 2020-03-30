@@ -10,6 +10,16 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import './Contact.css'
 
 const Contact = () => {
+  // SVG animation
+  const svgSpring = useSpring({
+    from: { x: 60, opacity: 0 },
+    to: async next => {
+      await next({ x: 120, opacity: 1 })
+    },
+    // delay: 2000,
+    config: { tension: 40, friction: 10 }
+  })
+
   // Arrow animation
   const arrowSpring = useSpring({
     from: { opacity: 0 },
@@ -25,6 +35,23 @@ const Contact = () => {
       className="Contact padded-section"
       id="contact"
     >
+      <animated.svg
+        viewBox="0 0 22 23"
+        className="contact-lightning-strike"
+        style={svgSpring}
+        strokeDashoffset={svgSpring.x}
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="none"
+          stroke="rgba(255, 215, 0, 0.5)"
+          strokeWidth=".1"
+          strokeDasharray="60"
+          height="100%"
+          width="100%"
+          d="M7 2v11h3v9"
+        />
+      </animated.svg>
       <VisibilitySensor>
         {({ isVisible }) => (
           <div className="contact-title-container">
