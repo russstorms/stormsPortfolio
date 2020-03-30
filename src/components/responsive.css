@@ -92,7 +92,7 @@
   /* About Section */
   .lightning-strike {
     position: absolute;
-    top: -12%;
+    top: -26%;
     left: 0;
     z-index: 0;
     transform: rotate(122deg);
@@ -100,7 +100,7 @@
 
   /* Contact Section */
   .contact-lightning-strike {
-    top: -22%;
+    top: -35%;
     left: 0%;
     width: 120%;
   }
