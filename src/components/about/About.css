@@ -45,7 +45,7 @@
 
 .lightning-strike {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   z-index: 0;
   transform: rotate(122deg);

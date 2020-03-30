@@ -1,48 +1,237 @@
-@media only screen and (min-height: 768px) {
+/* Heights */
+
+/* Widths */
+@media screen and (min-width: 600px) and (min-height: 600px) {
+  /* Splash */
   .lightning-bolt {
-    max-width: 170px;
-    top: 23%;
+    top: 18vh;
   }
   
   .lightning-bolt-two {
-    max-width: 155px;
-    top: 25%;
+    top: 20vh;
+  }
+
+  /* Nav */
+  .nav-wrapper {
+    min-height: 66px;
+  }
+
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: 0%;
+    left: -10%;
+    width: 130%;
   }
 }
 
-@media only screen and (min-height: 942px) {
+@media screen and (min-width: 700px) and (min-height: 700px) {
+  /* Splash */
   .lightning-bolt {
-    max-width: 190px;
-    top: 26.5%;
+    top: 23vh;
+    left: 49%;
   }
   
   .lightning-bolt-two {
-    max-width: 170px;
-    top: 28.5%;
+    top: 24.5vh;
+    left: 49%;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: row;
+  }
+  .lightning-strike {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -18%;
+    left: -10%;
+    width: 130%;
   }
 }
 
-@media only screen and (min-height: 1120px) {
+@media screen and (min-width: 800px) and (min-height: 800px) {
+  /* Splash */
   .lightning-bolt {
-    max-width: 200px;
-    top: 30%;
+    top: 26vh;
+    left: 49%;
   }
   
   .lightning-bolt-two {
-    max-width: 195px;
-    top: 31%;
+    top: 27vh;
+    left: 49%;
   }
 }
 
-
-@media only screen and (min-height: 1250px) {
+@media screen and (min-width: 900px) and (min-height: 900px) {
+  /* Splash */
   .lightning-bolt {
-    max-width: 200px;
-    top: 31%;
+    top: 29vh;
+    left: 49%;
   }
   
   .lightning-bolt-two {
-    max-width: 195px;
-    top: 32%;
+    top: 30vh;
+    left: 49%;
+  }
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: -12%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -22%;
+    left: 0%;
+    width: 120%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  /* Splash */
+  .lightning-bolt {
+    max-width: 185px;
+    top: 31vh;
+    left: 49%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 180px;
+    top: 32vh;
+    left: 49%;
+  }
+}
+
+@media screen and (min-height: 1150px) {
+  /* Splash */
+  .lightning-bolt {
+    top: 31vh;
+    left: 49%;
+  }
+  
+  .lightning-bolt-two {
+    top: 32vh;
+    left: 49%;
+  }
+}
+
+@media screen and (min-height: 1300px) {
+  /* Splash */
+  .lightning-bolt {
+    top: 33vh;
+    left: 49%;
+  }
+  
+  .lightning-bolt-two {
+    top: 34vh;
+    left: 49%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: -22%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -45%;
+    left: 0%;
+    width: 120%;
+  }
+
+  section.padded-section {
+    padding: 100px 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Splash */
+  .lightning-bolt {
+    max-width: 205px;
+    top: 32vh;
+    left: 49%;
+  }
+  
+  .lightning-bolt-two {
+    max-width: 198px;
+    top: 33vh;
+    left: 49%;
+  }
+
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: -35%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -55%;
+    left: 0%;
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -65%;
+    left: 0%;
+    width: 120%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  /* About Section */
+  .lightning-strike {
+    position: absolute;
+    top: -55%;
+    left: 0;
+    z-index: 0;
+    transform: rotate(122deg);
+  }
+
+  /* Contact Section */
+  .contact-lightning-strike {
+    top: -80%;
+    left: 0%;
+    width: 120%;
   }
 }

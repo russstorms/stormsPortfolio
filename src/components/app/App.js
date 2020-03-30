@@ -7,6 +7,7 @@ import Contact from '../contact/Contact'
 import Footer from '../footer/Footer'
 
 import './App.css'
+import '../responsive.css'
 
 function App() {
   return (

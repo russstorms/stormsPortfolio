@@ -4,7 +4,6 @@ import { animated, useTrail, useSpring } from 'react-spring'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import './Splash.css'
-import '../responsive.css'
 
 const Splash = () => {
   const [ flicker, setFlicker ] = useState(null)
