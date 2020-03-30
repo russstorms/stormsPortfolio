@@ -8,18 +8,18 @@
   max-width: 150px;
   height: auto;
   position: absolute;
-  top: 23%;
-  left: 50%;
+  top: 22.5%;
+  left: 48%;
   z-index: 1;
   transform: rotate(45deg);
 }
 
 .lightning-bolt-two {
-  max-width: 135px;
+  max-width: 145px;
   height: auto;
   position: absolute;
   top: 24%;
-  left: 50%;
+  left: 48%;
   transform: rotate(45deg);
 }
 
@@ -68,7 +68,7 @@
 .intro-first-name, .intro-last-name {
   font-size: 2em;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .intro-titles {
