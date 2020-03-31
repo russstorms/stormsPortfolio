@@ -14,8 +14,13 @@ const Projects = () => {
 
   // Project cards animation
   const projectsTrail = useTrail(projects.length, {
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+    from: {
+      opacity: 0,
+      x: -40
+    },
+    to: {
+      opacity: 1, x: 0
+    },
     config: { tension: 40, friction: 10 }
   })
 
@@ -68,10 +73,10 @@ const Projects = () => {
         <div
           className="projects-container"
         >
-          {projectsTrail.map((props, index) => (
+          {projectsTrail.map(({ x, ...rest }, index) => (
             <animated.div
               key={projects[index].id}
-              style={props}
+              style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
             >
               <Project
                 id={projects[index].id}
