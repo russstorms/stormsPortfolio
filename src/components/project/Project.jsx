@@ -12,7 +12,11 @@ const Project = ({ project }) => {
       onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
       onMouseLeave={() => set({ y: 100, color: 'gold' })}
     >
-      <img src={`${project.imageSrc}`} alt="project" />
+      <img
+        className="project-image"
+        src={`${project.imageSrc}`}
+        alt="project"
+      />
 
         <animated.div
           style={{ transform: y.interpolate(v => `translateY(${v}%`) }}

@@ -1,10 +1,13 @@
 // Projects list
+import chizSS from './images/chizetteArt.png'
+import lifeSafer from './images/lifeSafer.png'
+
 export const projectsData = {
   projects: [
     {
       id: 0,
       title: 'chizetteArt',
-      imageSrc: 'https://images.unsplash.com/photo-1551171129-7ebac0152f60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+      imageSrc: `${chizSS}`,
       url: 'https://www.google.com',
       githubLink: '',
       description: 'lorem ipsum description of project and what it solves'
@@ -12,7 +15,7 @@ export const projectsData = {
     {
       id: 2,
       title: 'LifeSafer',
-      imageSrc: 'https://images.unsplash.com/photo-1436891620584-47fd0e565afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+      imageSrc: `${lifeSafer}`,
       url: 'https://www.google.com',
       githubLink: 'https://www.github.com/rstorms90',
       description: 'lorem ipsum description of project and what it solves'

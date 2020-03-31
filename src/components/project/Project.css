@@ -16,6 +16,9 @@
   left: 0;
   z-index: 1;
 }
+.project-image {
+	height: 60vh;
+}
 .project-text {
 	z-index: 2;
 	width: 225px;
