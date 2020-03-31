@@ -62,9 +62,9 @@ const Projects = () => {
           {projects.map((project) => {
             return (
               <Project
-              key={project.id}
-              project={project}
-            />
+                key={project.id}
+                project={project}
+              />
             )
           })}
         </div>

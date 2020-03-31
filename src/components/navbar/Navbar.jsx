@@ -6,13 +6,13 @@ import './Navbar.css'
 const Navbar = () => {
 
   useEffect(() => {
-    const header = document.getElementById('navbar')
-    const sticky = header.offsetTop
+    const navbar = document.getElementById('navbar')
+    const sticky = navbar.offsetTop
     const scrollCallback = window.addEventListener('scroll', () => {
       if (window.pageYOffset > sticky) {
-        header.classList.add('sticky')
+        navbar.classList.add('sticky')
       } else {
-        header.classList.remove('sticky')
+        navbar.classList.remove('sticky')
       }
     })
     return () => {

@@ -32,6 +32,9 @@ const Project = ({ project }) => {
                 <h6>Github</h6>
               </a>
             }
+            <p>
+              {project.description}
+            </p>
           </animated.span>
         </animated.div>
     </div>

@@ -61,9 +61,7 @@ const Splash = () => {
   // SVG animation
   const svgSpring = useSpring({
     from: { x: 0, opacity: 0 },
-    to: async next => {
-      await next({ x: 120, opacity: 1 })
-    },
+    to: { x: 120, opacity: 1 },
     delay: 3000,
     config: { tension: 25, friction: 10, clamp: true }
   })
@@ -71,9 +69,7 @@ const Splash = () => {
   // Arrow animation
   const arrowSpring = useSpring({
     from: { opacity: 0 },
-    to: async next => {
-      await next({ opacity: 1 })
-    },
+    to: { opacity: 1 },
     delay: 500,
     config: { tension: 20, friction: 10 }
   })
