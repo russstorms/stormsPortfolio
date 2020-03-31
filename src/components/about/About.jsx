@@ -1,84 +1,21 @@
 import React from 'react'
 import profilePic from '../../images/profilePic.jpg'
-import { animated, useSpring } from 'react-spring'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
+
+import Strike from '../strike-svg/Strike'
 
 import './About.css'
 import '../../theme.css'
 
 const About = () => {
-  // SVG animation
-  // const svgSpring = useSpring({
-  //   from: { x: 60, opacity: 0 },
-  //   to: { x: 120, opacity: 1 },
-  //   delay: 9000,
-  //   config: { tension: 45, friction: 10, clamp: true }
-  // })
   
   return (
     <section
       id="about"
       className="About padded-section"
     >
-      <VisibilitySensor>
-        {({ isVisible }) => (
-          <Spring
-            delay={9000}
-            from={{
-              x: 60,
-              opacity: 0
-            }}
-            to={{
-              x: 120,
-              opacity: 1
-            }}
-            config={{
-              tension: 40,
-              friction: 10
-            }}
-          >
-            {({x, opacity}) => 
-              <svg
-                viewBox="0 0 18 23"
-                className="lightning-strike"
-                style={{x, opacity}}
-                strokeDashoffset={x}
-                preserveAspectRatio="none"
-              >
-                <path
-                  fill="none"
-                  stroke="rgba(255, 215, 0, 0.5)"
-                  strokeWidth=".1"
-                  strokeDasharray="60"
-                  height="100%"
-                  width="100%"
-                  d="M7 2v11h3v9"
-                />
-              </svg>
-            }
-          </Spring>
-        )}
-      </VisibilitySensor>
-      
-      {/* <animated.svg
-        viewBox="0 0 18 23"
-        className="lightning-strike"
-        style={svgSpring}
-        strokeDashoffset={svgSpring.x}
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="none"
-          stroke="rgba(255, 215, 0, 0.5)"
-          strokeWidth=".1"
-          strokeDasharray="60"
-          height="100%"
-          width="100%"
-          d="M7 2v11h3v9"
-        />
-      </animated.svg> */}
-      
+      <Strike />
       <VisibilitySensor>
         {({ isVisible }) => (
           <div className="about-title-container">
