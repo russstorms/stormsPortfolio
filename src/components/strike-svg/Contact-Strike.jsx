@@ -24,7 +24,7 @@ const SvgComponent = (props) => {
       pathLength={pathLength}
     >
       <svg
-        className={inView ? 'animated visible' : 'animated'}
+        className={inView ? 'contact-animated visible' : 'contact-animated'}
         viewBox='0 0 25 22'
         {...props}
       >
@@ -39,7 +39,7 @@ const SvgComponent = (props) => {
         />
       </svg>
       <svg
-        className={inView ? 'animated-two visible' : 'animated-two'}
+        className={inView ? 'contact-animated-two visible' : 'contact-animated-two'}
         viewBox='0 0 25 22'
         {...props}
       >
@@ -58,29 +58,29 @@ const SvgComponent = (props) => {
 }
 
 const Wrapper = styled.div`
-  .animated {
+  .contact-animated {
     stroke-dasharray: ${(props) => props.pathLength};
     stroke-dashoffset: ${(props) => props.pathLength};
     max-width: 100%;
     height: auto;
     position: absolute;
-    top: -60%;
-    right: -49%;
+    top: 56%;
+    right: -30%;
     z-index: 0;
     transform: rotate(65deg);
   }
-  .animated-two {
+  .contact-animated-two {
     stroke-dasharray: ${(props) => props.pathLength};
     stroke-dashoffset: ${(props) => props.pathLength};
     max-width: 100%;
     height: auto;
     position: absolute;
-    top: -58%;
-    right: -50%;
+    top: 57%;
+    right: -30%;
     z-index: 0;
     transform: rotate(65deg);
   }
-  .animated.visible, .animated-two.visible {
+  .contact-animated.visible, .contact-animated-two.visible {
     animation: draw .1s linear forwards;
     animation-delay: 2s;
   }
@@ -90,6 +90,82 @@ const Wrapper = styled.div`
     }
     to {
       stroke-dashoffset: 0;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .contact-animated {
+      top: 34%;
+    }
+    .contact-animated-two {
+      top: 35%;
+      right: -31%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .contact-animated {
+      top: 15%;
+    }
+    .contact-animated-two {
+      top: 16%;
+      right: -31%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .contact-animated {
+      top: -5%;
+    }
+    .contact-animated-two {
+      top: -4%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .contact-animated {
+      top: -15%;
+    }
+    .contact-animated-two {
+      top: -14%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .contact-animated {
+      top: -25%;
+    }
+    .contact-animated-two {
+      top: -24%;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .contact-animated {
+      top: -35%;
+    }
+    .contact-animated-two {
+      top: -34%;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .contact-animated {
+      top: -45%;
+      right: -40%;
+    }
+    .contact-animated-two {
+      top: -44%;
+      right: -41%;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .contact-animated {
+      top: -55%;
+    }
+    .contact-animated-two {
+      top: -54%;
     }
   }
 `
