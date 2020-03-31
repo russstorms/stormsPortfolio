@@ -13,22 +13,6 @@
   .nav-wrapper {
     min-height: 66px;
   }
-
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: 2%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: 0%;
-    left: -10%;
-    width: 130%;
-  }
 }
 
 @media screen and (min-width: 700px) and (min-height: 700px) {
@@ -46,20 +30,6 @@
   /* About Section */
   .about-container {
     flex-direction: row;
-  }
-  .lightning-strike {
-    position: absolute;
-    top: -5%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -18%;
-    left: -10%;
-    width: 130%;
   }
 }
 
@@ -86,21 +56,6 @@
   .lightning-bolt-two {
     top: 30vh;
     left: 49%;
-  }
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -26%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -35%;
-    left: 0%;
-    width: 120%;
   }
 }
 
@@ -146,22 +101,6 @@
 }
 
 @media screen and (min-width: 1100px) {
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -22%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -45%;
-    left: 0%;
-    width: 120%;
-  }
-
   section.padded-section {
     padding: 100px 150px;
   }
@@ -180,22 +119,6 @@
     top: 33vh;
     left: 49%;
   }
-
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -35%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -55%;
-    left: 0%;
-    width: 120%;
-  }
 }
 
 @media screen and (min-width: 1200px) and (max-height: 766px) {
@@ -211,56 +134,12 @@
     top: 21.5vh;
     left: 49%;
   }
-
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -31%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
-
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -55%;
-    left: 0%;
-    width: 120%;
-  }
 }
 
 @media screen and (min-width: 1350px) {
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -50%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
 
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -65%;
-    left: 0%;
-    width: 120%;
-  }
 }
 
 @media screen and (min-width: 1500px) {
-  /* About Section */
-  .lightning-strike {
-    position: absolute;
-    top: -55%;
-    left: 0;
-    z-index: 0;
-    transform: rotate(122deg);
-  }
 
-  /* Contact Section */
-  .contact-lightning-strike {
-    top: -80%;
-    left: 0%;
-    width: 120%;
-  }
 }

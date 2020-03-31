@@ -38,6 +38,21 @@ const SvgComponent = (props) => {
           strokeWidth={0.1}
         />
       </svg>
+      <svg
+        className={inView ? 'animated-two visible' : 'animated-two'}
+        viewBox='0 0 15 24'
+        {...props}
+      >
+        <path
+          height="100%"
+          width="100%"
+          ref={pathRef}
+          d="M7 2v11h3v9"
+          fill='none'
+          stroke='rgba(255, 255, 0, 0.5)'
+          strokeWidth={0.03}
+        />
+      </svg>
     </Wrapper>
   )
 }
@@ -54,7 +69,18 @@ const Wrapper = styled.div`
     z-index: 0;
     transform: rotate(-60deg);
   }
-  .animated.visible {
+  .animated-two {
+    stroke-dasharray: ${(props) => props.pathLength};
+    stroke-dashoffset: ${(props) => props.pathLength};
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: -68%;
+    right: 0;
+    z-index: 0;
+    transform: rotate(-60deg);
+  }
+  .animated.visible, .animated-two.visible {
     animation: draw .2s linear forwards;
     animation-delay: 2s;
   }
