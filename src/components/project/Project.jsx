@@ -26,14 +26,28 @@ const Project = ({ project }) => {
             className="project-text"
             style={{ color }}
           >
-            <h5 className="project-name">{project.title}</h5>
-            <a href={`${project.url}`} alt="" target="_blank">
-              <h6>Site</h6>
+            <h5
+              className="project-name"
+            >
+              {project.title}
+            </h5>
+            <a
+              className="project-btn"
+              href={`${project.url}`}
+              alt=""
+              target="_blank"
+              >
+                View Site
             </a>
             {
               project.githubLink !== '' &&
-              <a href={`${project.githubLink}`} alt="" target="_blank">
-                <h6>Github</h6>
+              <a
+                className="project-btn"
+                href={`${project.githubLink}`}
+                alt=""
+                target="_blank"
+              >
+                Github
               </a>
             }
             <p>

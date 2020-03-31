@@ -31,7 +31,27 @@
 .project-name {
 	font-size: 2em;
 }
-.project-text a {
-	text-decoration: none;
-	color: #FFFFFF;
+
+.project-btn-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }
+  .project-btn {
+		display: block;
+		justify-content: center;
+    width: 100px;
+    padding: 5px 25px;
+		margin: 5px;
+		color: #FFFFFF;
+		text-decoration: none;
+    background: transparent;
+    border: 2px solid #ffd700;
+    transition: .3s ease-in-out;
+  }
+  .project-btn:hover {
+		background-color: #ffd700;
+		color: #202020;
+    cursor: pointer;
+  }
