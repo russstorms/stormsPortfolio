@@ -1,6 +1,7 @@
 .Projects {
 	background-color: #202020;
 	color: #FFFFFF;
+	min-height: 60vh;
 }
 
 .projects-container {

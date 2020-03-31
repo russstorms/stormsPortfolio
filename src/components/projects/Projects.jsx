@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { animated, useTrail } from 'react-spring'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
@@ -9,7 +10,15 @@ import '../../theme.css'
 import './Projects.css'
 
 const Projects = () => {
-  const projects = projectsData.projects
+  const [projects, setProjects] = useState(projectsData)
+
+  // Project cards animation
+  const projectsTrail = useTrail(projects.length, {
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { tension: 40, friction: 10 }
+  })
+
 
   return (
     <div
@@ -59,14 +68,18 @@ const Projects = () => {
         <div
           className="projects-container"
         >
-          {projects.map((project) => {
-            return (
+          {projectsTrail.map((props, index) => (
+            <animated.div
+              key={projects[index].id}
+              style={props}
+            >
               <Project
-                key={project.id}
-                project={project}
+                id={projects[index].id}
+                project={projects[index]}
               />
-            )
-          })}
+              {projects[index].project}
+            </animated.div>
+          ))}
         </div>
       </section>
     </div>
