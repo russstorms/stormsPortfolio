@@ -1,8 +1,7 @@
 .project {
-	display: inline-block;
+	display: block;
 	position: relative;
 	overflow: hidden;
-	margin: 0;
 	max-width: 250px;
 	height: 60vh;
 }
