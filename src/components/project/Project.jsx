@@ -4,12 +4,12 @@ import { useSpring, animated } from "react-spring"
 import './Project.css'
 
 const Project = ({ project }) => {
-  const [{ y, color}, set] = useSpring(() => ({ y: 100, color: '#FFFFFF' }))
+  const [{ y, color}, set] = useSpring(() => ({ y: 100, color: 'steelblue' }))
 
   return (
     <div
       className="project"
-      onMouseEnter={() => set({ y: 0, color: '#FFFFFF' })}
+      onMouseEnter={() => set({ y: 0, color: 'steelblue' })}
       onMouseLeave={() => set({ y: 100, color: 'gold' })}
     >
       <img

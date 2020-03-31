@@ -14,7 +14,7 @@ const Contact = () => {
   const svgSpring = useSpring({
     from: { x: 60, opacity: 0 },
     to: { x: 120, opacity: 1 },
-    delay: 3000,
+    delay: 12000,
     config: { tension: 45, friction: 10, clamp: true }
   })
 

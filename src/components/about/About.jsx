@@ -9,22 +9,22 @@ import '../../theme.css'
 
 const About = () => {
   // SVG animation
-  const svgSpring = useSpring({
-    from: { x: 60, opacity: 0 },
-    to: { x: 120, opacity: 1 },
-    delay: 3000,
-    config: { tension: 45, friction: 10, clamp: true }
-  })
+  // const svgSpring = useSpring({
+  //   from: { x: 60, opacity: 0 },
+  //   to: { x: 120, opacity: 1 },
+  //   delay: 9000,
+  //   config: { tension: 45, friction: 10, clamp: true }
+  // })
   
   return (
     <section
       id="about"
       className="About padded-section"
     >
-      {/* <VisibilitySensor>
+      <VisibilitySensor>
         {({ isVisible }) => (
           <Spring
-            delay={300}
+            delay={9000}
             from={{
               x: 60,
               opacity: 0
@@ -60,8 +60,8 @@ const About = () => {
           </Spring>
         )}
       </VisibilitySensor>
-       */}
-      <animated.svg
+      
+      {/* <animated.svg
         viewBox="0 0 18 23"
         className="lightning-strike"
         style={svgSpring}
@@ -77,7 +77,7 @@ const About = () => {
           width="100%"
           d="M7 2v11h3v9"
         />
-      </animated.svg>
+      </animated.svg> */}
       
       <VisibilitySensor>
         {({ isVisible }) => (
