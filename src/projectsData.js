@@ -39,6 +39,15 @@ export const projectsData = [
   },
   {
     id: 4,
+    title: 'Team Rebus',
+    subTitle: '',
+    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/v1585718285/Portfolio%20ScreenShots/teamRebus.png',
+    url: 'https://www.teamrebus.com',
+    githubLink: '',
+    description: 'Team Rebus helps contact centers fuse best practice workforce and quality management solutions with the company’s core values and culture.'
+  },
+  {
+    id: 5,
     title: 'Gabee Coffee',
     subTitle: '',
     imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585753201/Portfolio%20ScreenShots/GabeeCoffee.png',
@@ -46,14 +55,5 @@ export const projectsData = [
     githubLink: '',
     description: 'Website for an unmatched coffee shop.'
   },
-  {
-    id: 5,
-    title: 'Team Rebus',
-    subTitle: '',
-    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/v1585718285/Portfolio%20ScreenShots/teamRebus.png',
-    url: 'https://www.teamrebus.com',
-    githubLink: '',
-    description: 'Team Rebus helps contact centers fuse best practice workforce and quality management solutions with the company’s core values and culture.'
-  }
 ]
 
