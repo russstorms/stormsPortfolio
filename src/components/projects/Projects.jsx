@@ -10,7 +10,7 @@ import '../../theme.css'
 import './Projects.css'
 
 const Projects = () => {
-  const [projects, setProjects] = useState(projectsData)
+  const [projects] = useState(projectsData)
 
   // Project cards animation
   const projectsTrail = useTrail(projects.length, {

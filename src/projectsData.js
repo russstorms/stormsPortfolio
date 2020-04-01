@@ -14,7 +14,7 @@ export const projectsData = [
     id: 1,
     title: 'LifeSafer',
     subTitle: '',
-    imageSrc: "https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585717300/lifeSafer.png",
+    imageSrc: "https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585717524/Portfolio%20ScreenShots/lifeSafer.png",
     url: 'https://www.lifesafer.com',
     githubLink: '',
     description: 'LifeSafer is a national ignition interlock company that serves 45 states.'
