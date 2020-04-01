@@ -25,6 +25,7 @@
 
 .about-side {
   z-index: 1;
+  flex-basis: 100%;
 }
 
 .profile-pic {
@@ -38,9 +39,8 @@
   background-color: #4682b4;
 }
 
-.placeholder-pic {
-  max-width: 100%;
-  height: auto;
+.script-box {
+  will-change: width, height, left, top;
+  position: relative;
 }
-
 

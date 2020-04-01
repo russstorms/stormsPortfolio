@@ -4,6 +4,7 @@ import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
 import Strike from '../strike-svg/Strike'
+import AboutSide from './AboutSide'
 
 import './About.css'
 import '../../theme.css'
@@ -130,11 +131,7 @@ const About = () => {
           </VisibilitySensor>
         </article>
         <div className="about-side">
-          <img
-            className="placeholder-pic"
-            src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1019&q=80"
-            alt="placeholder"
-          />
+          <AboutSide />
         </div>
       </div>
     </section>

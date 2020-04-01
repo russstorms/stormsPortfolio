@@ -4,98 +4,56 @@ export const projectsData = [
   {
     id: 0,
     title: 'chizetteArt',
-    imageSrc: "https://images.unsplash.com/photo-1581293738298-451cd74b0b45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=935&q=80",
+    subTitle: '',
+    imageSrc: "https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585703973/Portfolio%20ScreenShots/chizetteArt.png",
     url: 'https://www.chizetteart.com',
-    githubLink: '',
-    description: 'lorem ipsum description of project and what it solves'
+    githubLink: 'https://www.github.com/rstorms90/chizetteart',
+    description: 'Website for an artist to display art and sell prints.'
   },
   {
     id: 1,
     title: 'LifeSafer',
-    imageSrc: "https://images.unsplash.com/photo-1577702066866-6c8897d06443?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=898&q=80",
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
+    subTitle: '',
+    imageSrc: "https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585717300/lifeSafer.png",
+    url: 'https://www.lifesafer.com',
+    githubLink: '',
+    description: 'LifeSafer is a national ignition interlock company that serves 45 states.'
   },
   {
     id: 2,
     title: 'Gabee Coffee',
-    imageSrc: 'https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
+    subTitle: '',
+    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585717789/Portfolio%20ScreenShots/GabeeCoffee.png',
+    url: 'https://www.gabeecoffee.com/',
+    githubLink: '',
+    description: 'Website for an unmatched coffee shop.'
   },
   {
     id: 3,
     title: 'RigPark',
-    imageSrc: 'https://images.unsplash.com/photo-1585357214259-f977cc7d73a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
+    subTitle: '',
+    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585718102/Portfolio%20ScreenShots/RigPark.png',
+    url: 'https://www.rigpark.com',
+    githubLink: '',
+    description: 'Truck parking, simplified.'
   },
   {
     id: 4,
-    title: 'PAR Electric',
-    imageSrc: 'https://images.unsplash.com/photo-1518410240146-36aeeed0e4f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
+    title: 'Quanta Services',
+    subTitle: '(and child companies)',
+    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585718174/Portfolio%20ScreenShots/Quanta.png',
+    url: 'https://www.quantaservices.com/',
+    githubLink: '',
+    description: 'With the largest craft-skilled workforce, a best-in-class safety program, and unparalleled project execution.'
   },
   {
     id: 5,
-    title: 'LUMA',
-    imageSrc: 'https://images.unsplash.com/photo-1549222945-0ca3a530493c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=958&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 6,
-    title: 'Quanta Services',
-    imageSrc: 'https://images.unsplash.com/photo-1502318217862-aa4e294ba657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=958&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 7,
     title: 'Team Rebus',
-    imageSrc: 'https://images.unsplash.com/photo-1584954834492-38649a6511de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 8,
-    title: 'Project 9',
-    imageSrc: 'https://images.unsplash.com/photo-1585035779963-73f0c38f38d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 9,
-    title: 'Project 10',
-    imageSrc: 'https://images.unsplash.com/photo-1585067934141-ae65c82e7110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 10,
-    title: 'Project 11',
-    imageSrc: 'https://images.unsplash.com/photo-1584593744969-4731ae13ef24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
-  {
-    id: 11,
-    title: 'Project 12',
-    imageSrc: 'https://images.unsplash.com/photo-1584645511255-611381039151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80',
-    url: 'https://www.google.com',
-    githubLink: 'https://www.github.com/rstorms90',
-    description: 'lorem ipsum description of project and what it solves'
-  },
+    subTitle: '',
+    imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/v1585718285/Portfolio%20ScreenShots/teamRebus.png',
+    url: 'https://www.teamrebus.com',
+    githubLink: '',
+    description: 'Team Rebus helps contact centers fuse best practice workforce and quality management solutions with the company’s core values and culture.'
+  }
 ]
 

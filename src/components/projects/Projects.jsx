@@ -24,7 +24,6 @@ const Projects = () => {
     config: { tension: 40, friction: 10 }
   })
 
-
   return (
     <div
       className="Projects"
@@ -75,6 +74,7 @@ const Projects = () => {
         >
           {projectsTrail.map(({ x, ...rest }, index) => (
             <animated.div
+              className="project-container"
               key={projects[index].id}
               style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
             >

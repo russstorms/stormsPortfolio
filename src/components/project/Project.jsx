@@ -31,6 +31,12 @@ const Project = ({ project }) => {
             >
               {project.title}
             </h5>
+            {
+              project.subTitle !== '' &&
+              <p>
+                {project.subTitle}
+              </p>
+            }
             <a
               className="project-btn"
               href={`${project.url}`}
@@ -40,7 +46,7 @@ const Project = ({ project }) => {
                 View Site
             </a>
             {
-              project.githubLink !== '' &&
+              project.githubLink !== '' ?
               <a
                 className="project-btn"
                 href={`${project.githubLink}`}
@@ -49,6 +55,12 @@ const Project = ({ project }) => {
               >
                 Github
               </a>
+              :
+              <p
+                className="private-repo"
+              >
+                (Private Repo)
+              </p>
             }
             <p>
               {project.description}
