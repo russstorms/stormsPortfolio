@@ -20,7 +20,20 @@
   }
 }
 
-@media screen and (min-width: 700px) and (min-height: 700px) {
+@media screen and (min-height: 650px) {
+  /* Splash */
+  .lightning-bolt {
+    top: 22vh;
+    left: 49%;
+  }
+  
+  .lightning-bolt-two {
+    top: 23vh;
+    left: 49%;
+  }
+}
+
+@media screen and (min-height: 700px) {
   /* Splash */
   .lightning-bolt {
     top: 23vh;
@@ -31,7 +44,9 @@
     top: 24.5vh;
     left: 49%;
   }
+}
 
+@media screen and (min-width: 700px) {
   /* About Section */
   .about-container {
     flex-direction: row;
