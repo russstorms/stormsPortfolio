@@ -519,6 +519,71 @@
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .javascript {
+    min-width: 20ch;
+    min-height: 20ch;
+    width: 30vw;
+    height: 30vw;
+    max-width: 50ch;
+    max-height: 50ch;
+  }
+
+  .react {
+    left: 720px;
+    top: 350px;
+  }
+
+  .html {
+    right: 650px;
+    top: 330px;
+    width: 12ch;
+    height: 12ch;
+  }
+
+  .css {
+    right: 280px;
+    top: 350px;
+    width: 11ch;
+    height: 11ch;
+  }
+
+  .node {
+    top: 280px;
+    left: 480px;
+    width: 14ch;
+    height: 14ch;
+  }
+
+  .sql {
+    top: 320px;
+    right: 120px;
+    width: 12ch;
+    height: 12ch;
+  }
+
+  .typescript {
+    top: 350px;
+    right: -60px;
+    width: 10ch;
+    height: 10ch;
+  }
+
+  .php {
+    top: 420px;
+    width: 7ch;
+    height: 7ch;
+  }
+
+  .wordpress {
+    top: 260px;
+    left: 765px;
+    width: 8ch;
+    height: 8ch;
+  }
+}
+
+
 
 @media screen and (min-height: 1000px) {
   /* Splash */
