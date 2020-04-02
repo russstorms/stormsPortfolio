@@ -60,7 +60,7 @@ export const projectsData = [
     title: 'React Colors',
     subTitle: '',
     imageSrc: 'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585850810/Portfolio%20ScreenShots/ReactColors.png',
-    url: '',
+    url: 'http://react-colors.surge.sh/',
     githubLink: 'https://github.com/rstorms90/React-Colors',
     description: 'React color palette creator.'
   },
