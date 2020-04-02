@@ -156,7 +156,7 @@ const Splash = () => {
       </div>
       <animated.div
         style={arrowSpring}
-        onClick={() => scrollToSection('projects')}
+        onClick={() => scrollToSection('about')}
         className="arrow-button-container"
       >
         <KeyboardArrowDownIcon
