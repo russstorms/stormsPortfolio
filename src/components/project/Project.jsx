@@ -37,14 +37,24 @@ const Project = ({ project }) => {
                 {project.subTitle}
               </p>
             }
-            <a
-              className="project-btn"
-              href={`${project.url}`}
-              alt=""
-              target="_blank"
-              >
-                View Site
-            </a>
+            {
+              project.url !== '' ?
+              <a
+                className="project-btn"
+                href={`${project.url}`}
+                alt=""
+                target="_blank"
+                >
+                  View Site
+              </a>
+              :
+              <p
+              className="no-link"
+            >
+              (Not Hosted)
+            </p>
+            }
+            
             {
               project.githubLink !== '' ?
               <a

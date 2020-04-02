@@ -34,7 +34,7 @@
 	font-size: 2em;
 	margin-bottom: 5px;
 }
-.private-repo {
+.private-repo, .no-link {
 	color: #ffd900;
 }
 
