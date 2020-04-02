@@ -30,13 +30,16 @@
 	transform: translate(-50%, -75%);
 	padding: 5px;
 }
-.project-name {
-	font-size: 2em;
-	margin-bottom: 5px;
-}
-.private-repo, .no-link {
-	color: #ffd900;
-}
+	.project-name {
+		font-size: 2em;
+		margin-bottom: 5px;
+	}
+	.private-repo, .no-link {
+		color: #ffd900;
+	}
+	.project-description {
+		color: #FFFFFF;
+	}
 
 .project-btn-container {
   position: relative;

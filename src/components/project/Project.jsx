@@ -72,7 +72,9 @@ const Project = ({ project }) => {
                 (Private Repo)
               </p>
             }
-            <p>
+            <p
+              className="project-description"
+            >
               {project.description}
             </p>
           </animated.span>
