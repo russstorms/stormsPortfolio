@@ -1,7 +1,36 @@
 import React from 'react'
+import { animated, useTrail } from 'react-spring'
+
 import './SkillsList.css'
 
 const SkillsList = () => {
+  const skillList = [
+    `HTML5`,
+    `CSS`,
+    `Javscript`,
+    `Typescript`,
+    `React`,
+    `React Native`,
+    `Node`,
+    `SQL`,
+    `GraphQL`,
+    `Gatsby`,
+    `PHP`,
+    `Wordpress`,
+    `Version Control`,
+  ]
+
+  // Skills animation
+  const skillsSpring = useTrail(skillList.length, {
+    from: {
+      opacity: 0
+    },
+    to: {
+      opacity: 1
+    },
+    config: { tension: 250, fricton: 50 }
+  })
+
   return (
     <div
       className="Skills-List-Container"
@@ -10,19 +39,16 @@ const SkillsList = () => {
       <ul
         className="skills-list"
       >
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>Javscript</li>
-        <li>Typescript</li>
-        <li>React</li>
-        <li>React Native</li>
-        <li>Node</li>
-        <li>SQL</li>
-        <li>GraphQL</li>
-        <li>Gatsby</li>
-        <li>PHP</li>
-        <li>Wordpress</li>
-        <li>Version Control</li>
+        {skillsSpring.map(({ opacity }, index) => (
+          <animated.div
+            style={{ opacity }}
+            key={index}
+          >
+            <li>
+              {skillList[index]}
+            </li>
+          </animated.div>
+        ))}
       </ul>
     </div>
   )
