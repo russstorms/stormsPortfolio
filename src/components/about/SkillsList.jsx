@@ -6,7 +6,7 @@ const SkillsList = () => {
     <div
       className="Skills-List-Container"
     >
-      <h2 className="section-title">Skills</h2>
+      <h2 className="skills-title">Skills</h2>
       <ul
         className="skills-list"
       >
@@ -29,3 +29,4 @@ const SkillsList = () => {
 }
 
 export default SkillsList
+
