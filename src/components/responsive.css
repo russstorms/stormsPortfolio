@@ -131,6 +131,10 @@
     width: 8ch;
     height: 8ch;
   }
+
+  .Skills-List-Container, .about-btn-container {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 800px) and (min-height: 800px) {

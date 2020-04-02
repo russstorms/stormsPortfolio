@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import profilePic from '../../images/profilePic.jpg'
 import { Spring } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
 
 import Strike from '../strike-svg/Strike'
 import AboutSide from './AboutSide'
+import SkillsList from './SkillsList'
 
 import './About.css'
 import '../../theme.css'
 
 const About = () => {
+  const [skillsList, setSkillsList] = useState(false)
+
+  const toggle = () => {
+    setSkillsList(!skillsList)
+  }
   
   return (
     <section
@@ -140,7 +146,26 @@ const About = () => {
           </VisibilitySensor>
         </article>
         <div className="about-side">
-          <AboutSide />
+          {
+            skillsList ?
+              <SkillsList />
+            : <AboutSide />
+          }
+        </div>
+        <div
+          className="about-btn-container"
+        >
+          <button
+            className="about-btn"
+            onClick={toggle}
+          >
+            {
+              skillsList ?
+              'Skill Bubbles'
+              :
+              'View Skills'
+            }
+          </button>
         </div>
       </div>
     </section>
