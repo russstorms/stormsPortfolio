@@ -523,6 +523,26 @@
   }
 }
 
+@media screen and (min-width: 1200px) and (min-height: 767px) {
+  .lightning-bolt {
+    top: 20vh;
+  }
+  
+  .lightning-bolt-two {
+    top: 21.5vh;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 950px) {
+  .lightning-bolt {
+    top: 25vh;
+  }
+  
+  .lightning-bolt-two {
+    top: 26.5vh;
+  }
+}
+
 @media screen and (min-width: 1500px) {
   .javascript {
     min-width: 20ch;
