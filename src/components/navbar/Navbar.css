@@ -9,7 +9,6 @@
 .clipped-nav {
   border-top: 5px solid #4682b4;
   padding-right: 15px;
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   display: flex;
   flex-wrap: wrap;
   justify-content: left;

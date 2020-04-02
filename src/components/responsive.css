@@ -4,6 +4,12 @@
   }
 }
 
+@media screen and (min-width: 600px) {
+  .clipped-nav {
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  }
+}
+
 @media screen and (min-width: 600px) and (max-height: 600px) {
   /* Splash */
   .lightning-bolt {
@@ -490,7 +496,7 @@
 
   .node {
     top: 180px;
-    left: 330px;
+    left: 430px;
     width: 14ch;
     height: 14ch;
   }
@@ -574,7 +580,7 @@
 
   .node {
     top: 320px;
-    left: 520px;
+    left: 670px;
     width: 14ch;
     height: 14ch;
   }
