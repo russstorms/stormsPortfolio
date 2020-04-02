@@ -4,6 +4,17 @@
   }
 }
 
+@media screen and (min-width: 600px) and (max-height: 600px) {
+  /* Splash */
+  .lightning-bolt {
+    top: 19vh;
+  }
+  
+  .lightning-bolt-two {
+    top: 20vh;
+  }
+}
+
 @media screen and (min-width: 600px) and (min-height: 600px) {
   /* Splash */
   .lightning-bolt {
