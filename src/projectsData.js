@@ -23,7 +23,7 @@ export const projectsData = [
     githubLink: '',
     description:
       'LifeSafer is a national ignition interlock company that serves 45 states.',
-    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs.',
+    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const projectsData = [
     githubLink: '',
     description:
       'With the largest craft-skilled workforce, a best-in-class safety program, and unparalleled project execution.',
-    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs.',
+    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
     id: 3,
