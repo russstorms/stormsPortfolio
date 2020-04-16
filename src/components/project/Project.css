@@ -1,9 +1,9 @@
 .project {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	max-width: 250px;
-	height: 60vh;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 250px;
+  height: 60vh;
 }
 
 .overlay {
@@ -13,33 +13,35 @@
   position: absolute;
   top: 0;
   left: 0;
-	z-index: 1;
-	cursor: default;
+  z-index: 1;
+  cursor: default;
 }
 .project-image {
-	height: 60vh;
-	min-width: 250px;
+  height: 60vh;
+  min-width: 250px;
 }
 .project-text {
-	z-index: 2;
-	width: 225px;
-	height: 250px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -75%);
-	padding: 5px;
+  z-index: 2;
+  width: 225px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  padding: 5px;
 }
-	.project-name {
-		font-size: 2em;
-		margin-bottom: 5px;
-	}
-	.private-repo, .no-link {
-		color: #ffd900;
-	}
-	.project-description {
-		color: #FFFFFF;
-	}
+.project-name {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.private-repo,
+.no-link {
+  color: #ffd900;
+}
+.project-description,
+.project-tech {
+  color: #ffffff;
+}
 
 .project-btn-container {
   position: relative;
@@ -47,20 +49,20 @@
   justify-content: center;
   z-index: 1;
 }
-  .project-btn {
-		display: block;
-		justify-content: center;
-    width: 100px;
-    padding: 5px 25px;
-		margin: 5px;
-		color: #FFFFFF;
-		text-decoration: none;
-    background: transparent;
-    border: 2px solid #ffd700;
-    transition: .3s ease-in-out;
-  }
-  .project-btn:hover {
-		background-color: #ffd700;
-		color: #202020;
-    cursor: pointer;
-  }
+.project-btn {
+  display: block;
+  justify-content: center;
+  width: 100px;
+  padding: 5px 25px;
+  margin: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid #ffd700;
+  transition: 0.3s ease-in-out;
+}
+.project-btn:hover {
+  background-color: #ffd700;
+  color: #202020;
+  cursor: pointer;
+}
