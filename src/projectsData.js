@@ -51,17 +51,6 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'Gabee Coffee',
-    subTitle: '',
-    imageSrc:
-      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585753201/Portfolio%20ScreenShots/GabeeCoffee.png',
-    url: 'https://www.gabeecoffee.com/',
-    githubLink: '',
-    description: 'Website for an unmatched coffee shop.',
-    techList: 'Created with React, Gatsbyjs, & Netlify CMS',
-  },
-  {
-    id: 5,
     title: 'React Colors',
     subTitle: '',
     imageSrc:
