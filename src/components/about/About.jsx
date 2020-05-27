@@ -1,27 +1,24 @@
-import React, { useState } from 'react'
-import profilePic from '../../images/profilePic.jpg'
-import { Spring } from "react-spring/renderprops"
-import VisibilitySensor from "react-visibility-sensor"
+import React, { useState } from 'react';
+import profilePic from '../../images/profilePic.jpg';
+import { Spring } from 'react-spring/renderprops';
+import VisibilitySensor from 'react-visibility-sensor';
 
-import Strike from '../strike-svg/Strike'
-import AboutSide from './AboutSide'
-import SkillsList from './SkillsList'
+import Strike from '../strike-svg/Strike';
+import AboutSide from './AboutSide';
+import SkillsList from './SkillsList';
 
-import './About.css'
-import '../../theme.css'
+import './About.css';
+import '../../theme.css';
 
 const About = () => {
-  const [skillsList, setSkillsList] = useState(false)
+  const [skillsList, setSkillsList] = useState(false);
 
   const toggle = () => {
-    setSkillsList(!skillsList)
-  }
-  
+    setSkillsList(!skillsList);
+  };
+
   return (
-    <section
-      id="about"
-      className="About padded-section"
-    >
+    <section id="about" className="About padded-section">
       <Strike />
       <VisibilitySensor>
         {({ isVisible }) => (
@@ -33,14 +30,11 @@ const About = () => {
                 opacity: isVisible ? 1 : 0,
               }}
             >
-              {({ transform, opacity }) =>
-                <h1
-                  className="section-title"
-                  style={{transform, opacity}}
-                >
+              {({ transform, opacity }) => (
+                <h1 className="section-title" style={{ transform, opacity }}>
                   About
                 </h1>
-              }
+              )}
             </Spring>
             <Spring
               delay={600}
@@ -49,12 +43,12 @@ const About = () => {
                 opacity: isVisible ? 1 : 0,
               }}
             >
-              {({ transform, opacity }) =>
+              {({ transform, opacity }) => (
                 <div
                   className="about-underline"
-                  style={{transform, opacity}}
+                  style={{ transform, opacity }}
                 />
-              }
+              )}
             </Spring>
           </div>
         )}
@@ -69,14 +63,14 @@ const About = () => {
                   opacity: isVisible ? 1 : 0,
                 }}
               >
-                {({ opacity }) =>
+                {({ opacity }) => (
                   <img
-                    style={{opacity}}
+                    style={{ opacity }}
                     className="profile-pic"
                     src={profilePic}
                     alt="picture of me"
                   />
-                }
+                )}
               </Spring>
             )}
           </VisibilitySensor>
@@ -89,16 +83,14 @@ const About = () => {
                   opacity: isVisible ? 1 : 0,
                 }}
               >
-                {({ opacity }) =>
-                  <p
-                    style={{opacity}}
-                    className="about-paragraph"
-                  >
+                {({ opacity }) => (
+                  <p style={{ opacity }} className="about-paragraph">
                     Hey! I'm Russ. I found my passion for clean UI as a kid
-                    filming and editing skateboarding videos with my brother. A love of video
-                    editing led to learning Adobe Photoshop, and eventually Javascript!
+                    filming and editing skateboarding videos with my brother. A
+                    love of video editing led to learning Adobe Photoshop, and
+                    eventually Javascript!
                   </p>
-                }
+                )}
               </Spring>
             )}
           </VisibilitySensor>
@@ -111,15 +103,13 @@ const About = () => {
                   opacity: isVisible ? 1 : 0,
                 }}
               >
-                {({ opacity }) =>
-                  <p
-                    style={{opacity}}
-                    className="about-paragraph"
-                  >
-                    A big fan of MMA (love Jiu Jitsu), outdoor activities, creative writing,
-                    and spending time with my girlfriend and our little pup!
+                {({ opacity }) => (
+                  <p style={{ opacity }} className="about-paragraph">
+                    A big fan of MMA (love Jiu Jitsu), outdoor activities,
+                    creative writing, and spending time with my girlfriend and
+                    our little pup!
                   </p>
-                }
+                )}
               </Spring>
             )}
           </VisibilitySensor>
@@ -132,45 +122,28 @@ const About = () => {
                   opacity: isVisible ? 1 : 0,
                 }}
               >
-                {({ opacity }) =>
-                  <p
-                    style={{opacity}}
-                    className="about-paragraph"
-                  >
-                    I am a detail oriented person, immersed in the frontend spectrum, and enjoy
-                    working on ambitious projects with a great team. Remote work is preferrable!
+                {({ opacity }) => (
+                  <p style={{ opacity }} className="about-paragraph">
+                    I am a detail oriented person, immersed in the frontend
+                    spectrum, and enjoy working on ambitious projects with a
+                    great team. Remote work is preferrable!
                   </p>
-                }
+                )}
               </Spring>
             )}
           </VisibilitySensor>
         </article>
         <div className="about-side">
-          {
-            skillsList ?
-              <SkillsList />
-            : <AboutSide />
-          }
+          {skillsList ? <SkillsList /> : <AboutSide />}
         </div>
-        <div
-          className="about-btn-container"
-        >
-          <button
-            className="about-btn"
-            onClick={toggle}
-          >
-            {
-              skillsList ?
-              'Skill Bubbles'
-              :
-              'View Skills'
-            }
+        <div className="about-btn-container">
+          <button className="about-btn" onClick={toggle}>
+            {skillsList ? 'Skill Bubbles' : 'View Skills'}
           </button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;

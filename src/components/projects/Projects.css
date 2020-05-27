@@ -1,35 +1,33 @@
 .Projects {
-	background-color: #202020;
-	color: #FFFFFF;
-	min-height: 60vh;
+  background-color: #202020;
+  color: #ffffff;
+  min-height: 60vh;
 }
 
 .projects-container {
-	display: flex;
-	position: relative;
+  display: flex;
+  position: relative;
   flex-wrap: wrap;
   align-items: center;
-	justify-content: center;
-	z-index: 1;
-	padding-top: 35px;
+  justify-content: center;
+  z-index: 1;
+  padding-top: 35px;
 }
 
 .project-container {
-	min-width: 250px;
-	max-width: 250px;
+  min-width: 250px;
+  max-width: 250px;
 }
 
 .projects-title-container {
-	flex-direction: column;
+  flex-direction: column;
 }
-	.projects-title {
-		justify-content: flex-end;
-	}
-	.projects-underline {
-		height: 3px;
-		background-color: #4682b4;
-		margin-left: auto;
-		width: 165px;
-	}
-	
-
+.projects-title {
+  justify-content: flex-end;
+}
+.projects-underline {
+  height: 3px;
+  background-color: #4682b4;
+  margin-left: auto;
+  width: 165px;
+}

@@ -1,31 +1,25 @@
-import React, { useState, createRef, useEffect } from 'react'
-import styled from 'styled-components'
-import { useInView } from 'react-intersection-observer'
+import React, { useState, createRef, useEffect } from 'react';
+import styled from 'styled-components';
+import { useInView } from 'react-intersection-observer';
 
 const SvgComponent = (props) => {
   const [inViewRef, inView] = useInView({
-    triggerOnce: true
-  })
-  const pathRef = createRef()
-  const [pathLength, setPathLength] = useState()
+    triggerOnce: true,
+  });
+  const pathRef = createRef();
+  const [pathLength, setPathLength] = useState();
 
-  useEffect(
-    () => {
-      if (pathRef.current) {
-        setPathLength(pathRef.current.getTotalLength())
-      }
-    },
-    [pathRef]
-  )
+  useEffect(() => {
+    if (pathRef.current) {
+      setPathLength(pathRef.current.getTotalLength());
+    }
+  }, [pathRef]);
 
   return (
-    <Wrapper
-      ref={inViewRef}
-      pathLength={pathLength}
-    >
+    <Wrapper ref={inViewRef} pathLength={pathLength}>
       <svg
         className={inView ? 'about-animated visible' : 'about-animated'}
-        viewBox='0 0 15 24'
+        viewBox="0 0 15 24"
         {...props}
       >
         <path
@@ -33,14 +27,14 @@ const SvgComponent = (props) => {
           width="100%"
           ref={pathRef}
           d="M7 2v11h3v9"
-          fill='none'
-          stroke='rgba(255, 215, 0, 0.5)'
+          fill="none"
+          stroke="rgba(255, 215, 0, 0.5)"
           strokeWidth={0.07}
         />
       </svg>
       <svg
         className={inView ? 'about-animated-two visible' : 'about-animated-two'}
-        viewBox='0 0 15 24'
+        viewBox="0 0 15 24"
         {...props}
       >
         <path
@@ -48,14 +42,14 @@ const SvgComponent = (props) => {
           width="100%"
           ref={pathRef}
           d="M7 2v11h3v9"
-          fill='none'
-          stroke='rgba(255, 255, 0, 0.5)'
+          fill="none"
+          stroke="rgba(255, 255, 0, 0.5)"
           strokeWidth={0.03}
         />
       </svg>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   .about-animated {
@@ -80,8 +74,9 @@ const Wrapper = styled.div`
     z-index: 0;
     transform: rotate(-60deg);
   }
-  .about-animated.visible, .about-animated-two.visible {
-    animation: draw .2s linear forwards;
+  .about-animated.visible,
+  .about-animated-two.visible {
+    animation: draw 0.2s linear forwards;
     animation-delay: 2s;
   }
   @keyframes draw {
@@ -173,7 +168,6 @@ const Wrapper = styled.div`
       top: -93%;
     }
   }
-`
+`;
 
-export default SvgComponent
-
+export default SvgComponent;

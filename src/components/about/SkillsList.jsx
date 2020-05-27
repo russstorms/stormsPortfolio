@@ -1,7 +1,7 @@
-import React from 'react'
-import { animated, useTrail } from 'react-spring'
+import React from 'react';
+import { animated, useTrail } from 'react-spring';
 
-import './SkillsList.css'
+import './SkillsList.css';
 
 const SkillsList = () => {
   const skillList = [
@@ -18,41 +18,31 @@ const SkillsList = () => {
     `PHP`,
     `Wordpress`,
     `Version Control`,
-  ]
+  ];
 
   // Skills animation
   const skillsSpring = useTrail(skillList.length, {
     from: {
-      opacity: 0
+      opacity: 0,
     },
     to: {
-      opacity: 1
+      opacity: 1,
     },
-    config: { tension: 250, fricton: 50 }
-  })
+    config: { tension: 250, fricton: 50 },
+  });
 
   return (
-    <div
-      className="Skills-List-Container"
-    >
+    <div className="Skills-List-Container">
       <h2 className="skills-title">Skills</h2>
-      <ul
-        className="skills-list"
-      >
+      <ul className="skills-list">
         {skillsSpring.map(({ opacity }, index) => (
-          <animated.div
-            style={{ opacity }}
-            key={index}
-          >
-            <li>
-              {skillList[index]}
-            </li>
+          <animated.div style={{ opacity }} key={index}>
+            <li>{skillList[index]}</li>
           </animated.div>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default SkillsList
-
+export default SkillsList;

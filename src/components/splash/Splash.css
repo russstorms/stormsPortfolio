@@ -27,31 +27,31 @@
 
 @keyframes flicker {
   0% {
-    opacity: 0.4
+    opacity: 0.4;
   }
   5% {
-    opacity: 1
+    opacity: 1;
   }
   10% {
-    opacity: 0.6
+    opacity: 0.6;
   }
   15% {
-    opacity: 1
+    opacity: 1;
   }
   25% {
-    opacity: 0.3
+    opacity: 0.3;
   }
   40% {
-    opacity: 1
+    opacity: 1;
   }
   75% {
-    opacity: 0.8
+    opacity: 0.8;
   }
   80% {
-    opacity: 0.4
+    opacity: 0.4;
   }
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -59,18 +59,21 @@
   z-index: 10;
 }
 
-.intro-first-name, .intro-last-name, .intro-titles {
+.intro-first-name,
+.intro-last-name,
+.intro-titles {
   display: flex;
 }
 
-.intro-first-name, .intro-last-name {
+.intro-first-name,
+.intro-last-name {
   font-size: 2em;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
 
 .intro-titles {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .arrow-button-container {
@@ -80,39 +83,37 @@
   flex-direction: column;
   padding-top: 55px;
 }
-  .projects-arrow-button {
-    cursor: pointer;
-    animation: movingArrow 4s ease infinite;
-  }
+.projects-arrow-button {
+  cursor: pointer;
+  animation: movingArrow 4s ease infinite;
+}
 
-  .projects-arrow-button-two {
-    cursor: pointer;
-    margin-top: -25px;
-    animation: movingArrowTwo 4s ease infinite;
-  }
+.projects-arrow-button-two {
+  cursor: pointer;
+  margin-top: -25px;
+  animation: movingArrowTwo 4s ease infinite;
+}
 
-  @keyframes movingArrow {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes movingArrow {
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  @keyframes movingArrowTwo {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes movingArrowTwo {
+  0% {
+    transform: translateY(0);
   }
- 
- 
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

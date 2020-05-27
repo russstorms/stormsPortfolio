@@ -11,7 +11,7 @@ export const projectsData = [
     githubLink: 'https://www.github.com/rstorms90/chizetteart',
     description: 'Website for an artist to display art and sell prints.',
     techList:
-      'Created with React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
+      'React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ export const projectsData = [
     githubLink: '',
     description:
       'LifeSafer is a national ignition interlock company that serves 45 states.',
-    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs',
+    techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const projectsData = [
     githubLink: '',
     description:
       'With the largest craft-skilled workforce, a best-in-class safety program, and unparalleled project execution.',
-    techList: 'Created with Wordpress, Laravel, PHP, various plug-ins & APIs',
+    techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const projectsData = [
     githubLink: '',
     description:
       'Team Rebus helps contact centers fuse best practice workforce and quality management solutions with the company’s core values and culture.',
-    techList: 'Created with HTML, CSS, Bootstrap, & Javascript',
+    techList: 'HTML, CSS, Bootstrap, & Javascript',
   },
   {
     id: 4,
@@ -58,7 +58,6 @@ export const projectsData = [
     url: 'http://react-colors.surge.sh/',
     githubLink: 'https://github.com/rstorms90/React-Colors',
     description: 'React color palette creator.',
-    techList:
-      'Created with React, Chromajs, RC-Slider, Material-UI, React Router',
+    techList: 'React, Chromajs, RC-Slider, Material-UI, React Router',
   },
 ];

@@ -1,18 +1,18 @@
-import React, { useState } from 'react'
-import { scrollToSection } from '../../helpers/scrollToSection'
-import { animated, useTrail, useSpring } from 'react-spring'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import React, { useState } from 'react';
+import { scrollToSection } from '../../helpers/scrollToSection';
+import { animated, useTrail, useSpring } from 'react-spring';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
-import './Splash.css'
+import './Splash.css';
 
 const Splash = () => {
-  const [ flicker, setFlicker ] = useState(null)
+  const [flicker, setFlicker] = useState(null);
 
   // Create arrays for React Spring to map
-  const firstName = [`R`, `u`, `s`, `s`]
-  const lastName = [`S`, `t`, `o`, `r`, `m`, `s`]
-  const titles = `Developer / Engineer / Designer`
-  const titlesArr = titles.split(' ')
+  const firstName = [`R`, `u`, `s`, `s`];
+  const lastName = [`S`, `t`, `o`, `r`, `m`, `s`];
+  const titles = `Developer / Engineer / Designer`;
+  const titlesArr = titles.split(' ');
 
   // First name animation
   const firstNameSpring = useTrail(firstName.length, {
@@ -26,8 +26,8 @@ const Splash = () => {
       x: 20,
       height: 80,
     },
-    config: { tension: 250, friction: 50 }
-  })
+    config: { tension: 250, friction: 50 },
+  });
 
   // Last name animation
   const lastNameSpring = useTrail(lastName.length, {
@@ -35,16 +35,16 @@ const Splash = () => {
       opacity: 0,
       x: 0,
       height: 0,
-      color: '#FFFFFF'
+      color: '#FFFFFF',
     },
     to: {
       opacity: 1,
       x: -20,
       height: 80,
-      color: '#4682b4'
+      color: '#4682b4',
     },
-    config: { tension: 280, friction: 100 }
-  })
+    config: { tension: 280, friction: 100 },
+  });
 
   // Title animation
   const titleSpring = useTrail(titlesArr.length, {
@@ -55,28 +55,28 @@ const Splash = () => {
       opacity: 1,
     },
     delay: 1500,
-    config: { tension: 20, friction: 10 }
-  })
+    config: { tension: 20, friction: 10 },
+  });
 
   // SVG animation
   const svgSpring = useSpring({
     from: { x: 0, opacity: 0 },
     to: { x: 120, opacity: 1 },
     delay: 3000,
-    config: { tension: 25, friction: 10, clamp: true }
-  })
+    config: { tension: 25, friction: 10, clamp: true },
+  });
 
   // Arrow animation
   const arrowSpring = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     delay: 500,
-    config: { tension: 20, friction: 10 }
-  })
+    config: { tension: 20, friction: 10 },
+  });
 
   setTimeout(() => {
-    setFlicker(true)
-  }, 5000)
+    setFlicker(true);
+  }, 5000);
 
   return (
     <section className="Splash">
@@ -114,27 +114,27 @@ const Splash = () => {
           d="M7 2v11h3v9l7-12h-4l4-8z"
         />
       </animated.svg>
-      <div 
-        className="intro-name-container"
-      >
-        <div
-          className="intro-first-name"
-        >
+      <div className="intro-name-container">
+        <div className="intro-first-name">
           {firstNameSpring.map(({ x, height, ...rest }, index) => (
             <animated.div
-              style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              }}
               key={index}
             >
               {firstName[index]}
             </animated.div>
           ))}
         </div>
-        <div
-          className="intro-last-name"
-        >
+        <div className="intro-last-name">
           {lastNameSpring.map(({ x, height, ...rest }, index) => (
             <animated.div
-              style={{ ...rest, transform: x.interpolate(x => `translate3d(0, ${x}px,0)`) }}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0, ${x}px,0)`),
+              }}
               key={index}
             >
               {lastName[index]}
@@ -142,14 +142,9 @@ const Splash = () => {
           ))}
         </div>
       </div>
-      <div
-        className="intro-titles"
-      >
+      <div className="intro-titles">
         {titleSpring.map((animation, index) => (
-          <animated.div
-            style={animation}
-            key={index}
-          >
+          <animated.div style={animation} key={index}>
             {titlesArr[index]}
           </animated.div>
         ))}
@@ -169,8 +164,7 @@ const Splash = () => {
         />
       </animated.div>
     </section>
-  )
-}
+  );
+};
 
-export default Splash
-
+export default Splash;

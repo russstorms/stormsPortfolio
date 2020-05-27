@@ -3,12 +3,13 @@
   padding-top: 30%;
   padding-left: 30%;
 }
-.Skills-List-Container, .about-btn-container {
+.Skills-List-Container,
+.about-btn-container {
   display: none;
 }
 
 .skills-title {
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 2em;
   margin: 0;
@@ -18,10 +19,10 @@
 .skills-list {
   list-style: none;
 }
-  .skills-list li {
-    font-size: 1.5em;
-    color: gold;
-  }
+.skills-list li {
+  font-size: 1.5em;
+  color: gold;
+}
 
 /* Skills Button */
 .about-btn-container {
@@ -30,18 +31,17 @@
   bottom: 150px;
   right: 150px;
 }
-  .about-btn {
-    font-size: 1em;
-    width: 150px;
-    padding: 5px 25px;
-    margin: 5px;
-    background: transparent;
-    border: 2px solid #ffd700;
-    color: #FFFFFF;
-    transition: .3s ease-in-out;
-  }
-  .about-btn:hover {
-    background-color: #ffd700;
-    cursor: pointer;
-  }
-
+.about-btn {
+  font-size: 1em;
+  width: 150px;
+  padding: 5px 25px;
+  margin: 5px;
+  background: transparent;
+  border: 2px solid #ffd700;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.about-btn:hover {
+  background-color: #ffd700;
+  cursor: pointer;
+}

@@ -1,31 +1,25 @@
-import React, { useState, createRef, useEffect } from 'react'
-import styled from 'styled-components'
-import { useInView } from 'react-intersection-observer'
+import React, { useState, createRef, useEffect } from 'react';
+import styled from 'styled-components';
+import { useInView } from 'react-intersection-observer';
 
 const SvgComponent = (props) => {
   const [inViewRef, inView] = useInView({
-    triggerOnce: true
-  })
-  const pathRef = createRef()
-  const [pathLength, setPathLength] = useState()
+    triggerOnce: true,
+  });
+  const pathRef = createRef();
+  const [pathLength, setPathLength] = useState();
 
-  useEffect(
-    () => {
-      if (pathRef.current) {
-        setPathLength(pathRef.current.getTotalLength())
-      }
-    },
-    [pathRef]
-  )
+  useEffect(() => {
+    if (pathRef.current) {
+      setPathLength(pathRef.current.getTotalLength());
+    }
+  }, [pathRef]);
 
   return (
-    <Wrapper
-      ref={inViewRef}
-      pathLength={pathLength}
-    >
+    <Wrapper ref={inViewRef} pathLength={pathLength}>
       <svg
         className={inView ? 'contact-animated visible' : 'contact-animated'}
-        viewBox='0 0 25 22'
+        viewBox="0 0 25 22"
         {...props}
       >
         <path
@@ -33,14 +27,16 @@ const SvgComponent = (props) => {
           width="100%"
           ref={pathRef}
           d="M7 2v11h3v9"
-          fill='none'
-          stroke='rgba(255, 215, 0, 0.5)'
+          fill="none"
+          stroke="rgba(255, 215, 0, 0.5)"
           strokeWidth={0.1}
         />
       </svg>
       <svg
-        className={inView ? 'contact-animated-two visible' : 'contact-animated-two'}
-        viewBox='0 0 25 22'
+        className={
+          inView ? 'contact-animated-two visible' : 'contact-animated-two'
+        }
+        viewBox="0 0 25 22"
         {...props}
       >
         <path
@@ -48,14 +44,14 @@ const SvgComponent = (props) => {
           width="100%"
           ref={pathRef}
           d="M7 2v11h3v9"
-          fill='none'
-          stroke='rgba(255, 255, 0, 0.5)'
+          fill="none"
+          stroke="rgba(255, 255, 0, 0.5)"
           strokeWidth={0.03}
         />
       </svg>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   .contact-animated {
@@ -80,8 +76,9 @@ const Wrapper = styled.div`
     z-index: 0;
     transform: rotate(65deg);
   }
-  .contact-animated.visible, .contact-animated-two.visible {
-    animation: draw .1s linear forwards;
+  .contact-animated.visible,
+  .contact-animated-two.visible {
+    animation: draw 0.1s linear forwards;
     animation-delay: 2s;
   }
   @keyframes draw {
@@ -168,7 +165,6 @@ const Wrapper = styled.div`
       top: -54%;
     }
   }
-`
+`;
 
-export default SvgComponent
-
+export default SvgComponent;

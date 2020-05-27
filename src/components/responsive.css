@@ -15,7 +15,7 @@
   .lightning-bolt {
     top: 19vh;
   }
-  
+
   .lightning-bolt-two {
     top: 20vh;
   }
@@ -26,7 +26,7 @@
   .lightning-bolt {
     top: 18vh;
   }
-  
+
   .lightning-bolt-two {
     top: 20vh;
   }
@@ -43,7 +43,7 @@
     top: 22vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 23vh;
     left: 49%;
@@ -56,7 +56,7 @@
     top: 23vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 24.5vh;
     left: 49%;
@@ -138,7 +138,8 @@
     height: 8ch;
   }
 
-  .Skills-List-Container, .about-btn-container {
+  .Skills-List-Container,
+  .about-btn-container {
     display: block;
   }
 }
@@ -149,7 +150,7 @@
     top: 26vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 27vh;
     left: 49%;
@@ -242,7 +243,7 @@
   }
   .about-info-container {
     flex-basis: 100%;
-  } 
+  }
 }
 
 @media screen and (min-width: 900px) and (min-height: 900px) {
@@ -251,7 +252,7 @@
     top: 29vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 30vh;
     left: 49%;
@@ -459,7 +460,7 @@
     top: 32vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     max-width: 198px;
     top: 33vh;
@@ -533,7 +534,7 @@
   .lightning-bolt {
     top: 20vh;
   }
-  
+
   .lightning-bolt-two {
     top: 21.5vh;
   }
@@ -543,7 +544,7 @@
   .lightning-bolt {
     top: 25vh;
   }
-  
+
   .lightning-bolt-two {
     top: 26.5vh;
   }
@@ -613,8 +614,6 @@
   }
 }
 
-
-
 @media screen and (min-height: 1000px) {
   /* Splash */
   .lightning-bolt {
@@ -622,7 +621,7 @@
     top: 31vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     max-width: 180px;
     top: 32vh;
@@ -636,7 +635,7 @@
     top: 31vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 32vh;
     left: 49%;
@@ -649,7 +648,7 @@
     top: 33vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     top: 34vh;
     left: 49%;
@@ -663,7 +662,7 @@
     top: 18vh;
     left: 49%;
   }
-  
+
   .lightning-bolt-two {
     max-width: 198px;
     top: 20vh;
@@ -672,9 +671,7 @@
 }
 
 @media screen and (min-width: 1350px) {
-
 }
 
 @media screen and (min-width: 1500px) {
-
 }
