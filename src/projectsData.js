@@ -3,18 +3,6 @@
 export const projectsData = [
   {
     id: 0,
-    title: 'chizetteArt',
-    subTitle: '',
-    imageSrc:
-      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585703973/Portfolio%20ScreenShots/chizetteArt.png',
-    url: 'https://www.chizetteart.com',
-    githubLink: 'https://www.github.com/rstorms90/chizetteart',
-    description: 'Website for an artist to display art and sell prints.',
-    techList:
-      'React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
-  },
-  {
-    id: 1,
     title: 'LifeSafer',
     subTitle: '',
     imageSrc:
@@ -26,7 +14,43 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
+    id: 1,
+    title: 'chizetteArt',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585703973/Portfolio%20ScreenShots/chizetteArt.png',
+    url: 'https://www.chizetteart.com',
+    githubLink: 'https://www.github.com/rstorms90/chizetteart',
+    description: 'Website for an artist to display art and sell prints.',
+    techList:
+      'React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
+  },
+  {
     id: 2,
+    title: 'PAR Electric',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1597251482/Par%20Electric.png',
+    url: 'https://www.parelectric.com/',
+    githubLink: '',
+    description:
+      'PAR is a national leader in all aspects of outside electrical construction.',
+    techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
+  },
+  {
+    id: 3,
+    title: 'Price Gregory',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_scale,h_500/v1597252503/Price%20Gregory.png',
+    url: 'https://www.pricegregory.com',
+    githubLink: '',
+    description:
+      'The leading provider of energy transmission services with a focus on pipeline and facility construction.',
+    techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
+  },
+  {
+    id: 4,
     title: 'Quanta Services',
     subTitle: '(and child companies)',
     imageSrc:
@@ -38,7 +62,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 3,
+    id: 5,
     title: 'Team Rebus',
     subTitle: 'Landing Page',
     imageSrc:
@@ -50,7 +74,7 @@ export const projectsData = [
     techList: 'HTML, CSS, Bootstrap, & Javascript',
   },
   {
-    id: 4,
+    id: 6,
     title: 'React Colors',
     subTitle: '',
     imageSrc:
