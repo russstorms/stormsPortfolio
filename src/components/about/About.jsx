@@ -68,7 +68,7 @@ const About = () => {
                     style={{ opacity }}
                     className="profile-pic"
                     src={profilePic}
-                    alt="picture of me"
+                    alt="me"
                   />
                 )}
               </Spring>

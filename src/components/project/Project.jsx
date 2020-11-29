@@ -31,6 +31,7 @@ const Project = ({ project }) => {
               href={`${project.url}`}
               alt=""
               target="_blank"
+              rel="noopener noreferrer"
             >
               View Site
             </a>
@@ -44,6 +45,7 @@ const Project = ({ project }) => {
               href={`${project.githubLink}`}
               alt=""
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </a>
