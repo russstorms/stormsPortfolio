@@ -3,6 +3,17 @@
 export const projectsData = [
   {
     id: 0,
+    title: 'Vail Resorts',
+    subTitle: '(and owned resorts)',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,w_250/v1606675187/Vail.png',
+    url: 'https://www.vail.com/',
+    githubLink: '',
+    description: 'Vail — Ski resort',
+    techList: 'React, jQuery, C#, Sitecore',
+  },
+  {
+    id: 1,
     title: 'LifeSafer',
     subTitle: '',
     imageSrc:
@@ -14,7 +25,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 1,
+    id: 2,
     title: 'chizetteArt',
     subTitle: '',
     imageSrc:
@@ -26,7 +37,7 @@ export const projectsData = [
       'React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
   },
   {
-    id: 2,
+    id: 3,
     title: 'PAR Electric',
     subTitle: '',
     imageSrc:
@@ -38,7 +49,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Price Gregory',
     subTitle: '',
     imageSrc:
@@ -50,7 +61,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Quanta Services',
     subTitle: '(and child companies)',
     imageSrc:
@@ -62,7 +73,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Team Rebus',
     subTitle: 'Landing Page',
     imageSrc:
@@ -74,7 +85,7 @@ export const projectsData = [
     techList: 'HTML, CSS, Bootstrap, & Javascript',
   },
   {
-    id: 6,
+    id: 7,
     title: 'React Colors',
     subTitle: '',
     imageSrc:
