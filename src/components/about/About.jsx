@@ -126,7 +126,7 @@ const About = () => {
                   <p style={{ opacity }} className="about-paragraph">
                     I am a detail oriented person, immersed in the frontend
                     spectrum, and enjoy working on ambitious projects with a
-                    great team. Remote work is preferrable!
+                    great team. Remote work is preferable!
                   </p>
                 )}
               </Spring>
