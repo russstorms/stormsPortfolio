@@ -58,7 +58,7 @@ const About = () => {
           <VisibilitySensor offset={{ bottom: -300, top: -300 }}>
             {({ isVisible }) => (
               <Spring
-                delay={1200}
+                delay={1000}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
@@ -78,7 +78,7 @@ const About = () => {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={800}
+                delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
@@ -98,7 +98,7 @@ const About = () => {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={900}
+                delay={550}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
@@ -117,7 +117,7 @@ const About = () => {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={1000}
+                delay={600}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}

@@ -1,3 +1,15 @@
+/* iPhone 6/7/8 */
+@media screen and (min-width: 375px) {
+  .clipped-nav {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .clipped-nav .nav-link {
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 550px) {
   .profile-pic {
     max-width: 320px;
