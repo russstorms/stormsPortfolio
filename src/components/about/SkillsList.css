@@ -1,6 +1,8 @@
 /* Skills List */
-.Skills-List-Container {
-  padding: 0 25px;
+.Skills-List {
+  padding: 40px 25px;
+  z-index: 10;
+  position: relative;
 }
 
 .skills-title {
@@ -12,7 +14,43 @@
   color: gold;
 }
 
+.skills-btn-container {
+  display: flex;
+  justify-content: center;
+}
+.skills-btn-container button {
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 25px;
+  width: 130px;
+}
+.skills-btn-container button:hover {
+  background-color: #4682b4;
+  transition: 0.1s ease-in-out;
+}
+.skills-btn-container button.active {
+  border-bottom: 3px solid gold;
+  padding: 2px 25px;
+}
+
 .skills-list {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.skills-icon {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.skills-name {
+  display: flex;
+  color: #4682b4;
+  justify-content: center;
 }

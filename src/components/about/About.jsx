@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import profilePic from '../../images/profilePic.jpg';
 import { Spring } from 'react-spring/renderprops';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -10,12 +10,6 @@ import './About.css';
 import '../../theme.css';
 
 const About = () => {
-  const [skillsList, setSkillsList] = useState(false);
-
-  const toggle = () => {
-    setSkillsList(!skillsList);
-  };
-
   return (
     <section id="about" className="About padded-section">
       <Strike />
@@ -135,9 +129,23 @@ const About = () => {
           </div>
         </article>
       </div>
-      <div className="about-side">
-        <SkillsList />
-      </div>
+
+      <VisibilitySensor>
+        {({ isVisible }) => (
+          <Spring
+            delay={500}
+            to={{
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
+            {({ opacity }) => (
+              <div style={{ opacity }} className="about-side">
+                <SkillsList />
+              </div>
+            )}
+          </Spring>
+        )}
+      </VisibilitySensor>
     </section>
   );
 };
