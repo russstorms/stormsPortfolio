@@ -50,7 +50,7 @@
   z-index: 1;
 }
 .project-btn {
-  display: block;
+  display: flex;
   justify-content: center;
   width: 100px;
   padding: 5px 25px;
