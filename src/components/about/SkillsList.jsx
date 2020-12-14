@@ -12,7 +12,7 @@ const SkillsList = () => {
   const back = 'back';
   const storage = 'storage';
 
-  const data = specialities[selected];
+  const skillsList = specialities[selected];
 
   return (
     <div className="Skills-List">
@@ -41,7 +41,7 @@ const SkillsList = () => {
       </div>
 
       <div className="skills-list">
-        {data.map(({ id, icon, techName }) => (
+        {skillsList.map(({ id, icon, techName }) => (
           <div key={id}>
             <div className="skills-icon">{icon}</div>
             <h4 className="skills-name">{techName}</h4>
