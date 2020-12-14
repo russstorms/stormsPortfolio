@@ -13,6 +13,17 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .skills-list {
+    flex-wrap: wrap;
+  }
+  .skills-list div {
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 550px) {
