@@ -9,14 +9,10 @@
   font-size: 2em;
   margin: 0;
   cursor: default;
+  color: gold;
 }
 
 .skills-list {
   display: flex;
   justify-content: space-evenly;
-}
-
-.skills-list div {
-  font-size: 1em;
-  color: gold;
 }
