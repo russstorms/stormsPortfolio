@@ -13,7 +13,7 @@
 
 .skills-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .skills-list div {
