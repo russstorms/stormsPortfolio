@@ -145,7 +145,7 @@ const SkillsList = () => {
         <button
           onClick={(e) => switchSpecialties(e)}
           data-val="Front"
-          className={specialties === 'Front' && `active`}
+          className={specialties === 'Front' ? `active` : ''}
         >
           Front-End Technologies
         </button>
@@ -153,7 +153,7 @@ const SkillsList = () => {
         <button
           onClick={(e) => switchSpecialties(e)}
           data-val="Back"
-          className={specialties === 'Back' && `active`}
+          className={specialties === 'Back' ? `active` : ''}
         >
           Back-End Technologies
         </button>
@@ -161,7 +161,7 @@ const SkillsList = () => {
         <button
           onClick={(e) => switchSpecialties(e)}
           data-val="Storage"
-          className={specialties === 'Storage' && `active`}
+          className={specialties === 'Storage' ? `active` : ''}
         >
           Storage & Deployment
         </button>

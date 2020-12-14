@@ -8,6 +8,11 @@
   .clipped-nav .nav-link {
     padding: 0;
   }
+
+  .about-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -19,6 +24,11 @@
 @media screen and (min-width: 600px) {
   .clipped-nav {
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  }
+
+  .about-info-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -80,74 +90,13 @@
   .about-container {
     flex-direction: row;
   }
+
   .about-info-container {
-    flex-basis: 30%;
+    flex-direction: row;
   }
+
   .about-side-container {
     display: block;
-  }
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 30vw;
-    height: 30vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 250px;
-    top: 250px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .html {
-    right: 150px;
-    top: 250px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .css {
-    right: 0px;
-    top: 250px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .node {
-    top: 150px;
-    left: 200px;
-    width: 15ch;
-    height: 15ch;
-  }
-
-  .sql {
-    top: 150px;
-    right: 150px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -210px;
-    width: 6ch;
-    height: 6ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 165px;
-    width: 8ch;
-    height: 8ch;
   }
 
   .Skills-List-Container,
@@ -167,92 +116,9 @@
     top: 27vh;
     left: 49%;
   }
-
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 60vw;
-    height: 60vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 350px;
-    top: 270px;
-    width: 15ch;
-    height: 15ch;
-  }
-  .node {
-    top: 280px;
-    left: 260px;
-    width: 15ch;
-    height: 15ch;
-  }
 }
 
 @media screen and (min-width: 900px) {
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 40vw;
-    height: 40vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 420px;
-    top: 350px;
-  }
-
-  .html {
-    right: 250px;
-    top: 330px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .css {
-    right: 80px;
-    top: 350px;
-    width: 9ch;
-    height: 9ch;
-  }
-
-  .node {
-    top: 180px;
-    left: 330px;
-    width: 14ch;
-    height: 14ch;
-  }
-
-  .sql {
-    top: 200px;
-    right: 120px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 165px;
-    width: 8ch;
-    height: 8ch;
-  }
   .about-info-container {
     flex-basis: 100%;
   }
@@ -269,199 +135,11 @@
     top: 30vh;
     left: 49%;
   }
-
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 70vw;
-    height: 70vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 420px;
-    top: 250px;
-  }
-
-  .html {
-    right: 250px;
-    top: 250px;
-    width: 16ch;
-    height: 16ch;
-  }
-
-  .css {
-    right: 80px;
-    top: 350px;
-    width: 15ch;
-    height: 15ch;
-  }
-
-  .node {
-    top: 350px;
-    left: 330px;
-    width: 18ch;
-    height: 18ch;
-  }
-
-  .sql {
-    top: 250px;
-    right: 120px;
-    width: 18ch;
-    height: 18ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 165px;
-    width: 8ch;
-    height: 8ch;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 40vw;
-    height: 40vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 420px;
-    top: 350px;
-  }
-
-  .html {
-    right: 250px;
-    top: 330px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .css {
-    right: 80px;
-    top: 350px;
-    width: 9ch;
-    height: 9ch;
-  }
-
-  .node {
-    top: 180px;
-    left: 330px;
-    width: 14ch;
-    height: 14ch;
-  }
-
-  .sql {
-    top: 200px;
-    right: 120px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 165px;
-    width: 8ch;
-    height: 8ch;
-  }
 }
 
 @media screen and (min-width: 1100px) {
   section.padded-section {
     padding: 100px 150px;
-  }
-
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 40vw;
-    height: 40vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 420px;
-    top: 350px;
-  }
-
-  .html {
-    right: 250px;
-    top: 330px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .css {
-    right: 80px;
-    top: 350px;
-    width: 9ch;
-    height: 9ch;
-  }
-
-  .node {
-    top: 180px;
-    left: 330px;
-    width: 14ch;
-    height: 14ch;
-  }
-
-  .sql {
-    top: 200px;
-    right: 120px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 165px;
-    width: 8ch;
-    height: 8ch;
   }
 }
 
@@ -477,68 +155,6 @@
     max-width: 198px;
     top: 33vh;
     left: 49%;
-  }
-
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 25vw;
-    height: 25vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 820px;
-    top: 350px;
-  }
-
-  .html {
-    right: 450px;
-    top: 330px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .css {
-    right: 280px;
-    top: 350px;
-    width: 11ch;
-    height: 11ch;
-  }
-
-  .node {
-    top: 180px;
-    left: 430px;
-    width: 14ch;
-    height: 14ch;
-  }
-
-  .sql {
-    top: 200px;
-    right: 120px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 300px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 765px;
-    width: 8ch;
-    height: 8ch;
   }
 }
 
@@ -559,70 +175,6 @@
 
   .lightning-bolt-two {
     top: 26.5vh;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .javascript {
-    min-width: 20ch;
-    min-height: 20ch;
-    width: 30vw;
-    height: 30vw;
-    max-width: 50ch;
-    max-height: 50ch;
-  }
-
-  .react {
-    left: 720px;
-    top: 350px;
-  }
-
-  .html {
-    right: 650px;
-    top: 330px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .css {
-    right: 280px;
-    top: 350px;
-    width: 11ch;
-    height: 11ch;
-  }
-
-  .node {
-    top: 320px;
-    left: 670px;
-    width: 14ch;
-    height: 14ch;
-  }
-
-  .sql {
-    top: 320px;
-    right: 120px;
-    width: 12ch;
-    height: 12ch;
-  }
-
-  .typescript {
-    top: 350px;
-    right: -60px;
-    width: 10ch;
-    height: 10ch;
-  }
-
-  .php {
-    top: 420px;
-    width: 7ch;
-    height: 7ch;
-  }
-
-  .wordpress {
-    top: 260px;
-    left: 765px;
-    width: 8ch;
-    height: 8ch;
   }
 }
 
