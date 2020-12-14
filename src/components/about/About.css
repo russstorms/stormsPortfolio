@@ -6,9 +6,6 @@
 }
 
 .about-title-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 0px;
   width: 110px;
 }
 
@@ -19,6 +16,7 @@
 }
 
 .about-info-container {
+  display: flex;
   padding: 0 25px;
   z-index: 2;
 }

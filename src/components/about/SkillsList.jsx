@@ -1,5 +1,4 @@
 import React from 'react';
-import { animated, useTrail } from 'react-spring';
 
 import './SkillsList.css';
 
@@ -20,27 +19,14 @@ const SkillsList = () => {
     `Version Control`,
   ];
 
-  // Skills animation
-  const skillsSpring = useTrail(skillList.length, {
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    config: { tension: 250, fricton: 50 },
-  });
-
   return (
     <div className="Skills-List-Container">
-      <h2 className="skills-title">Skills</h2>
-      <ul className="skills-list">
-        {skillsSpring.map(({ opacity }, index) => (
-          <animated.div style={{ opacity }} key={index}>
-            <li>{skillList[index]}</li>
-          </animated.div>
+      <h2 className="skills-title">Specialties</h2>
+      <div className="skills-list">
+        {skillList.map((skill, idx) => (
+          <div key={idx}>{skill}</div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
