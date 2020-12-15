@@ -130,7 +130,7 @@ const About = () => {
         </article>
       </div>
 
-      <VisibilitySensor>
+      <VisibilitySensor offset={{ bottom: -300, top: -300 }}>
         {({ isVisible }) => (
           <Spring
             delay={500}
