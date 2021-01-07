@@ -19,6 +19,8 @@ import {
   SiApollographql,
   SiSocketDotIo,
   SiNetlify,
+  SiDocker,
+  SiWebpack,
 } from 'react-icons/si';
 
 export const specialities = {
@@ -111,6 +113,16 @@ export const specialities = {
       id: 3,
       techName: 'Heroku',
       icon: <DiHeroku />,
+    },
+    {
+      id: 4,
+      techName: 'Docker',
+      icon: <SiDocker />,
+    },
+    {
+      id: 5,
+      techName: 'Webpack',
+      icon: <SiWebpack />,
     },
   ],
 };
