@@ -60,6 +60,11 @@ export const specialities = {
       techName: 'Sass',
       icon: <DiSass />,
     },
+    {
+      id: 5,
+      techName: 'Webpack',
+      icon: <SiWebpack />,
+    },
   ],
   back: [
     {
@@ -118,11 +123,6 @@ export const specialities = {
       id: 4,
       techName: 'Docker',
       icon: <SiDocker />,
-    },
-    {
-      id: 5,
-      techName: 'Webpack',
-      icon: <SiWebpack />,
     },
   ],
 };
