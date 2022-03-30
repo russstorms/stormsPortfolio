@@ -3,6 +3,42 @@
 export const projectsData = [
   {
     id: 0,
+    title: 'The Dodo',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,w_250/v1648606772/The%20Dodo.png',
+    url: 'https://www.thedodo.com/',
+    githubLink: '',
+    description: '',
+    techList:
+      'Next.js, React.js, GraphQL, Styled-Components, Node.js, Redux, Firebase',
+  },
+  {
+    id: 1,
+    title: 'Thrillist',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,w_250/v1648606957/Thrillist.png',
+    url: 'https://www.thrillist.com/',
+    githubLink: '',
+    description: '',
+    techList:
+      'Next.js, React.js, GraphQL, Styled-Components, Node.js, Redux, Firebase',
+  },
+  {
+    id: 2,
+    title: 'NowThis News',
+    subTitle: '',
+    imageSrc:
+      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,w_250/v1648606989/NowThis%20News.png',
+    url: 'https://www.nowthisnews.com/',
+    githubLink: '',
+    description: '',
+    techList:
+      'Next.js, React.js, GraphQL, Styled-Components, Node.js, Redux, Firebase',
+  },
+  {
+    id: 3,
     title: 'Vail Resorts',
     subTitle: '(and owned resorts)',
     imageSrc:
@@ -13,7 +49,7 @@ export const projectsData = [
     techList: 'React, jQuery, C#, Sitecore',
   },
   {
-    id: 1,
+    id: 4,
     title: 'LifeSafer',
     subTitle: '',
     imageSrc:
@@ -25,19 +61,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 2,
-    title: 'chizetteArt',
-    subTitle: '',
-    imageSrc:
-      'https://res.cloudinary.com/rstorms90/image/upload/c_fill,h_500,w_250/v1585703973/Portfolio%20ScreenShots/chizetteArt.png',
-    url: 'https://www.chizetteart.com',
-    githubLink: 'https://www.github.com/rstorms90/chizetteart',
-    description: 'Website for an artist to display art and sell prints.',
-    techList:
-      'React, Material-UI, React Spring, Node, Express, bcryptjs, JWT, knex, PostgreSQL, Amazon S3, Heroku, & Stripe API',
-  },
-  {
-    id: 3,
+    id: 5,
     title: 'PAR Electric',
     subTitle: '',
     imageSrc:
@@ -49,7 +73,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Price Gregory',
     subTitle: '',
     imageSrc:
@@ -61,7 +85,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Quanta Services',
     subTitle: '(and child companies)',
     imageSrc:
@@ -73,7 +97,7 @@ export const projectsData = [
     techList: 'Wordpress, Laravel, PHP, various plug-ins & APIs',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Team Rebus',
     subTitle: 'Landing Page',
     imageSrc:
@@ -85,7 +109,7 @@ export const projectsData = [
     techList: 'HTML, CSS, Bootstrap, & Javascript',
   },
   {
-    id: 7,
+    id: 9,
     title: 'React Colors',
     subTitle: '',
     imageSrc:
