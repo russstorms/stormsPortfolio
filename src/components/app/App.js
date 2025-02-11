@@ -1,5 +1,5 @@
-import React from 'react';
-import Splash from '../splash/Splash';
+import React, { Suspense } from 'react';
+const Splash = React.lazy(() => import('../splash/Splash'));
 import Navbar from '../navbar/Navbar';
 import About from '../about/About';
 import Projects from '../projects/Projects';
@@ -13,7 +13,9 @@ function App() {
   return (
     <div className="App" id="home">
       <header className="App-header">
-        <Splash />
+        <Suspense fallback={<span />}>
+          <Splash />
+        </Suspense>
       </header>
       <Navbar />
       <About />

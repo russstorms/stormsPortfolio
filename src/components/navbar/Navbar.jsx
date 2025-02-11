@@ -7,15 +7,19 @@ const Navbar = () => {
   useEffect(() => {
     const navbar = document.getElementById('navbar');
     const sticky = navbar.offsetTop;
-    const scrollCallback = window.addEventListener('scroll', () => {
-      if (window.pageYOffset > sticky) {
+
+    const handleScroll = () => {
+      if (window.scrollY > sticky) {
         navbar.classList.add('sticky');
       } else {
         navbar.classList.remove('sticky');
       }
-    });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', scrollCallback);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { scrollToSection } from '../../helpers/scrollToSection';
 import { animated, useTrail, useSpring } from 'react-spring';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
@@ -11,49 +11,26 @@ const Splash = () => {
   // Create arrays for React Spring to map
   const firstName = [`R`, `u`, `s`, `s`];
   const lastName = [`S`, `t`, `o`, `r`, `m`, `s`];
-  const titles = `Developer / Engineer / Designer`;
-  const titlesArr = titles.split(' ');
+  const title = `Software Engineer`;
 
   // First name animation
   const firstNameSpring = useTrail(firstName.length, {
-    from: {
-      opacity: 0,
-      x: 0,
-      height: 0,
-    },
-    to: {
-      opacity: 1,
-      x: 20,
-      height: 80,
-    },
-    config: { tension: 250, friction: 50 },
+    from: { opacity: 0, x: 0, height: 0 },
+    to: { opacity: 1, x: 10, height: 80 },
+    config: { tension: 180, friction: 30 },
   });
 
   // Last name animation
   const lastNameSpring = useTrail(lastName.length, {
-    from: {
-      opacity: 0,
-      x: 0,
-      height: 0,
-      color: '#FFFFFF',
-    },
-    to: {
-      opacity: 1,
-      x: -20,
-      height: 80,
-      color: '#4682b4',
-    },
-    config: { tension: 280, friction: 100 },
+    from: { opacity: 0, x: 0, height: 0, color: '#FFFFFF' },
+    to: { opacity: 1, x: -20, height: 80, color: '#4682b4' },
+    config: { tension: 180, friction: 30 },
   });
 
   // Title animation
-  const titleSpring = useTrail(titlesArr.length, {
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
+  const titleSpring = useTrail(title, {
+    from: { opacity: 0 },
+    to: { opacity: 1 },
     delay: 1500,
     config: { tension: 20, friction: 10 },
   });
@@ -62,7 +39,7 @@ const Splash = () => {
   const svgSpring = useSpring({
     from: { x: 0, opacity: 0 },
     to: { x: 120, opacity: 1 },
-    delay: 3000,
+    delay: 2500,
     config: { tension: 25, friction: 10, clamp: true },
   });
 
@@ -74,9 +51,10 @@ const Splash = () => {
     config: { tension: 20, friction: 10 },
   });
 
-  setTimeout(() => {
-    setFlicker(true);
-  }, 5000);
+  useEffect(() => {
+    const timer = setTimeout(() => setFlicker(true), 4200);
+    return () => clearTimeout(timer); // Cleanup
+  }, []);
 
   return (
     <section className="Splash">
@@ -128,6 +106,7 @@ const Splash = () => {
             </animated.div>
           ))}
         </div>
+        <span className="anchor" />
         <div className="intro-last-name">
           {lastNameSpring.map(({ x, height, ...rest }, index) => (
             <animated.div
@@ -142,10 +121,11 @@ const Splash = () => {
           ))}
         </div>
       </div>
+
       <div className="intro-titles">
         {titleSpring.map((animation, index) => (
           <animated.div style={animation} key={index}>
-            {titlesArr[index]}
+            {title}
           </animated.div>
         ))}
       </div>

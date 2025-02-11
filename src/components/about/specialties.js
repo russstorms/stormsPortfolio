@@ -12,12 +12,12 @@ import {
 import {
   SiRedux,
   SiGatsby,
-  SiNextDotJs,
+  SiNextdotjs,
   SiHtml5,
   SiCss3,
   SiGraphql,
   SiApollographql,
-  SiSocketDotIo,
+  SiSocketdotio,
   SiNetlify,
   SiDocker,
   SiWebpack,
@@ -43,7 +43,7 @@ export const specialities = {
     {
       id: 3,
       techName: 'Next',
-      icon: <SiNextDotJs />,
+      icon: <SiNextdotjs />,
     },
     {
       id: 4,
@@ -95,7 +95,7 @@ export const specialities = {
     {
       id: 5,
       techName: 'Socket.io',
-      icon: <SiSocketDotIo />,
+      icon: <SiSocketdotio />,
     },
   ],
   storage: [

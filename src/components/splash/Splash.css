@@ -3,22 +3,24 @@
 }
 
 .lightning-bolt {
+  will-change: transform, opacity;
   max-width: 150px;
   height: auto;
-  position: absolute;
-  top: 21vh;
-  left: 48%;
+  position: fixed;
+  position-anchor: --tooltip;
+  position-area: top right;
   z-index: 1;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(26px, 4px);
 }
 
 .lightning-bolt-two {
+  will-change: transform, opacity;
   max-width: 145px;
   height: auto;
-  position: absolute;
-  top: 22.5vh;
-  left: 48%;
-  transform: rotate(45deg);
+  position: fixed;
+  position-anchor: --tooltip;
+  position-area: top right;
+  transform: rotate(45deg) translate(29px, 2px);
 }
 
 .flicker {
@@ -55,13 +57,14 @@
   }
 }
 
-.intro-name-container {
-  z-index: 10;
+.anchor {
+  anchor-name: --tooltip;
 }
 
 .intro-first-name,
 .intro-last-name,
 .intro-titles {
+  will-change: transform, opacity;
   display: flex;
 }
 
@@ -69,11 +72,15 @@
 .intro-last-name {
   font-size: 2em;
   text-transform: uppercase;
-  padding-bottom: 30px;
+}
+
+.intro-first-name {
+  padding-bottom: 25px;
 }
 
 .intro-titles {
-  font-size: 0.8em;
+  font-size: 20px;
+  justify-content: center;
 }
 
 .arrow-button-container {
